@@ -1,9 +1,8 @@
 # Tyler Pettitt's Professional Portfolio
 
 ## About the Project
-```
 This project utilizes the MEVN stack(MongoDB, Express, Vue.js, Node.js) to display my professional experience thus far in my career.
-```
+
 ## Project setup
 ```
 npm install
@@ -30,5 +29,9 @@ npm run build
 npm run lint
 ```
 
-#### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## License and copyright
+
+© Tyler J Pettitt
+
+Licensed under the [MIT License](LICENSE)
