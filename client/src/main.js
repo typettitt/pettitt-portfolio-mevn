@@ -1,21 +1,31 @@
 import Vue from 'vue'
 import App from './App.vue'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import VueRouter from 'vue-router';
-Vue.use(VueRouter);
+import {BootstrapVue, BootstrapVueIcons} from 'bootstrap-vue'
 import VueAxios from 'vue-axios';
 import axios from 'axios';
-Vue.use(VueAxios, axios);
-Vue.config.productionTip = false;
+import 'bootstrap/dist/css/bootstrap.min.css'
 import HomeComponent from './components/HomeComponent.vue';
 import CreateComponent from './components/CreateComponent.vue';
 import IndexComponent from './components/IndexComponent.vue';
 import EditComponent from './components/EditComponent.vue';
+
+
+Vue.use(VueRouter);
+Vue.use(VueAxios, axios);
+Vue.use(BootstrapVue);
+Vue.use(BootstrapVueIcons);
+
+Vue.config.productionTip = false;
+
 const routes = [
   {
     name: 'home',
     path: '/',
-    component: HomeComponent
+    component: HomeComponent,
+    meta: {
+      title: 'Tyler Pettitt'
+    }
   },
   {
     name: 'create',

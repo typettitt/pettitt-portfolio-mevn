@@ -2,6 +2,9 @@
 
 ## About the Project
 This project utilizes the MEVN stack(MongoDB, Express, Vue.js, Node.js) to display my professional experience thus far in my career.
+I will also be utilizing BootstrapVue components and icons to aid with styling.
+
+Link: (PENDING)
 
 ## Project setup
 ```
@@ -9,13 +12,13 @@ npm install
 ```
 
 #### Compiles and hot-reloads for frontend development
-```
 In the client directory:
+```
 npm run serve
 ```
 #### Compiles and hot-reloads for backend development
-```
 In the server directory:
+```
 nodemon server
 ```
 
