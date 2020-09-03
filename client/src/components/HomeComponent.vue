@@ -1,8 +1,6 @@
 <template>
   <b-container fluid>
-    <div class="parallax" style="height:1000px">
-      <br />
-      <br />
+    <div class="parallax">
       <br />
       <br />
       <br />
@@ -53,24 +51,26 @@
       <br />
       <br />
     </div>
-    <div class="text-white" align="center" style="height:400px">
+    <div class="text-white" align="center" >
       <h1 class="font-weight-bold mt-4 mb-4">About Me</h1>
-      <div class="text-white" align="center" style="width:600px">
+      <div class="text-white" align="center" >
         <p>
           I have worked in the software industry for just about 3 years.
           I'm currently a Software Engineer at the University of Nebraska Medical Center, a world-class leader in pateient care, research, and education.
           Recently, I had the opportunity to work on a small portion of the datafeed for the hospital's mobile application as well as a web application in which both of them were recognized by The Wall Street Journal shortly after in Spring 2020.
         </p>
         <p>During my time at UNMC, I have worked hard to maintain my status as an eternal student, the learning never stops. Staying open-minded with a positive can-do attitude has brought me where I am today.</p>
-      </div>
+      </div><br />
+      <br />
+      <br />
     </div>
-    <div class="parallax2" style="height:500px">
+    <div class="parallax2">
       <b-row align-h="center">
-        <h1 class="font-weight-bold text-white mt-4 mb-2">My System</h1>
+        <h1 class="font-weight-bold text-white mt-4 mb-0">My System</h1>
       </b-row>
       <div class="text-white" align="center">
         <br />
-        <b-row class="mt-4 mb-4" align-h="center">
+        <b-row class="mt-2 mb-4" align-h="center">
           <a
             class="nounderline link"
             href="https://www.linkedin.com/pulse/contagious-positivity-secret-weapon-successful-emil-hauch-jensen/"
@@ -106,6 +106,7 @@
           >DO NOT BE AFRAID OF FAILURE</a>
         </b-row>
       </div>
+      <br/>
     </div>
     <div class="text-white" style="height:1350px">
       <b-row align-h="center">
@@ -326,7 +327,7 @@
 }
 .link {
   color: white;
-  font-size: 25px;
+  font-size: 1.25em;
 }
 .link:hover {
   color: #3126d4;
