@@ -31,7 +31,20 @@ npm run build
 ```
 npm run lint
 ```
+### Deployment Instructions
+client:
+``
+npm run build:
+```
+make sure most recent changes committed
+project directory(I have to do this in powershell for some reason):
+```
+git add .
+git status
+git commit -m "write your own commit message"
 
+git push heroku master
+```
 
 ## License and copyright
 
