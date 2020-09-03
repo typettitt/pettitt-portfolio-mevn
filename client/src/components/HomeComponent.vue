@@ -57,7 +57,8 @@
         <p>
           I have worked in the software industry for just about 3 years.
           I'm currently a Software Engineer at the University of Nebraska Medical Center, a world-class leader in pateient care, research, and education.
-          Recently, I had the opportunity to work on a small portion of the datafeed for the hospital's mobile application as well as a web application in which both of them were recognized by The Wall Street Journal shortly after in Spring 2020.
+          Recently, I had the opportunity to work on a small portion of the datafeed for the hospital's mobile application as well as a web application.
+          Shortly after in Spring of 2020, both of them were recognized by The Wall Street Journal.
         </p>
         <p>During my time at UNMC, I have worked hard to maintain my status as an eternal student, the learning never stops. Staying open-minded with a positive can-do attitude has brought me where I am today.</p>
       </div><br />
