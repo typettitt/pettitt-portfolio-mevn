@@ -65,7 +65,7 @@
       <br />
       <br />
     </div>
-    <div class="parallax2">
+    <div class="parallax">
       <b-row align-h="center">
         <h1 class="font-weight-bold text-white mt-4 mb-0">My System</h1>
       </b-row>
