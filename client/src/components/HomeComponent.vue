@@ -112,7 +112,7 @@
         <h1 class="font-weight-bold mt-4">My Journey</h1>
       </b-row>
       <br />
-      <b-row>
+      <b-row align="center">
         <b-col>
           <b-card
             img-src="https://www.unmc.edu/iexcel/_images/davisglobalcenter.jpg"
@@ -170,7 +170,7 @@
           </b-card>
         </b-col>
       </b-row>
-      <b-row>
+      <b-row align="center">
         <b-col>
           <b-card
             img-src="https://www.collegeconsensus.com/wp-content/uploads/2016/12/Wayne-State-1000x667.jpg"
@@ -292,24 +292,21 @@
           <b-button variant="outline-primary" v-on:click="showContactModal()">Contact Me</b-button>
         </h2>
       </b-row>
+        <b-row align-h="center">
+        <div class="text-white mt-0" style="font-size: 10px;">
+            Icons made by
+            <a
+            class="nounderline"
+            href="https://www.flaticon.com/authors/pixel-perfect"
+            title="Pixel perfect"
+            >Pixel perfect</a> from
+            <a class="nounderline" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+        </b-row>
     </div>
-    <b-row align-h="center">
-      <div class="text-white mt-5" style="font-size: 10px;">
-        Icons made by
-        <a
-          class="nounderline"
-          href="https://www.flaticon.com/authors/pixel-perfect"
-          title="Pixel perfect"
-        >Pixel perfect</a> from
-        <a class="nounderline" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-      </div>
-    </b-row>
     <br />
   </b-container>
 </template>
-<script>
-export default {};
-</script>
 <style>
 .parallax {
   background: url("../assets/images/bridger-range.jpg") no-repeat center center
@@ -350,4 +347,21 @@ html {
   font-size: 100%;
 }
 </style>
-
+<script>
+export default {
+  data() {
+    return {
+      post: {},
+    };
+  },
+  computed: {
+        pageTitle: function() {
+            return this.$route.meta.title;
+        }
+    },
+  methods: {
+    showContactModal(){
+        alert('clicked');
+    }
+  },
+};

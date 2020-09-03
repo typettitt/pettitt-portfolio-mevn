@@ -6,7 +6,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 //add routes
-const postRoute = require('./post.route');
+const postRoute = require('./api/post.route');
 
 //DB Connection
 mongoose.Promise = global.Promise;
@@ -21,9 +21,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //add routes
-app.use('/posts', postRoute);
+app.use('/api/posts', postRoute);
 
-
+//handle production
+if(process.env.NODE_ENV == 'production'){
+    //Static folder
+    app.use(express.static(__dirname + '/public'));
+    
+    //Handle SPA
+    app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'));
+}
 app.listen(PORT, function () {
     console.log('Server is running on Port:', PORT);
 });
