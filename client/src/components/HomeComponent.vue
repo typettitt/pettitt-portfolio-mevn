@@ -16,8 +16,7 @@
           <h1 class="text-white text-uppercase font-weight-bold mb-2">
             <img
               class="circular--square"
-              height="200px"
-              width="200px"
+              width="50%"
               src="../assets/images/square-headshot.jpg"
             />
           </h1>
@@ -55,12 +54,41 @@
       <h1 class="font-weight-bold mt-4 mb-4">About Me</h1>
       <div class="text-white" align="center" >
         <p>
-          I have worked in the software industry for just about 3 years.
-          I'm currently a Software Engineer at the University of Nebraska Medical Center, a world-class leader in pateient care, research, and education.
-          Recently, I had the opportunity to work on a small portion of the datafeed for the hospital's mobile application as well as a web application.
-          Shortly after in Spring of 2020, both of them were recognized by The Wall Street Journal.
+            I have worked in the software industry for 3 years. 
+            I'm currently a Software Engineer at the University of Nebraska Medical Center, a leader in the world of pateient care, research, and education. 
+            I get to do meaningful work every day to further company goals and embrace the mission at UNMC:
         </p>
-        <p>During my time at UNMC, I have worked hard to maintain my status as an eternal student, the learning never stops. Staying open-minded with a positive can-do attitude has brought me where I am today.</p>
+        <p>
+          <i>
+              "Our mission is to lead the world in transforming lives to create a healthy future for all individuals and communities through premier educational programs, innovative research and extraordinary patient care.""
+          </i>
+        <p>
+        <p>
+          During my time at UNMC, I have worked hard to maintain my status as an eternal student, learning never stops. 
+          Staying open-minded with a positive can-do attitude has brought me where I am today. 
+          In my free time you'll find me enjoying the great outdoors. 
+          My favorite place to be is somewhere in the mountains but as I get older, I'm finding that a beach is becoming a solid contender. 
+          Some things I enjoy when not at work are sand volleyball, hiking, snowboarding, and motorsports.
+        </p>
+        <p>
+          As I look into the future, time is becoming evermore important to me as well as truly enjoying what I do. 
+          When coming face-to-face with future opportunities, I ask myself the following: 
+        </p>
+        <p>
+          Would I take pride in my job? 
+        </p>
+        <p>
+          Would I be doing meaningful work? 
+        </p>
+        <p>
+          What is the company culture like? 
+        </p>
+        <p>
+          How is the work-life balance? 
+        </p>
+        <p>
+          What learning opportunities are there to further my knowledge?
+        </p>
       </div><br />
       <br />
       <br />
@@ -114,7 +142,7 @@
         <h1 class="font-weight-bold mt-4">My Journey</h1>
       </b-row>
       <br />
-      <b-row align="center">
+      <!-- <b-row align="center">
         <b-col>
           <b-card
             img-src="https://www.unmc.edu/iexcel/_images/davisglobalcenter.jpg"
@@ -263,7 +291,7 @@
               </b-row>
             </b-card-text>
           </b-card>
-      </b-row>
+      </b-row> -->
     </div>
     <br />
     <div class="parallax" style="height:300px">
@@ -363,7 +391,7 @@ export default {
     },
   methods: {
     showContactModal(){
-        alert('clicked');
+        //alert('clicked');
     }
   },
 };
