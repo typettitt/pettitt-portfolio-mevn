@@ -301,7 +301,7 @@
       <b-row align-h="center">
         <a href="https://github.com/typettitt" target="_blank">
           <img
-            src="../assets\social-media-icons\039-github.png"
+            src="../assets/social-media-icons/039-github.png"
             alt="github"
             width="100px"
             height="100px"
@@ -309,9 +309,8 @@
         </a>
         <a href="https://www.linkedin.com/in/tyler-pettitt/" target="_blank">
           <img
-            class="ml-3"
-            src="../assets\social-media-icons\031-linkedin.png"
-            alt="github"
+            src="../assets/social-media-icons/031-linkedin.png"
+            alt="linkedin"
             width="100px"
             height="100px"
           />
