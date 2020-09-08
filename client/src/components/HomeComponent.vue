@@ -312,9 +312,9 @@
         </a>
       </b-row>
       <b-row align-h="center">
-        <h2 class="font-weight-bold text-white mt-4 mb-4">
+        <!-- <h2 class="font-weight-bold text-white mt-4 mb-4">
           <b-button variant="outline-primary" v-on:click="showContactModal()">Contact Me</b-button>
-        </h2>
+        </h2> -->
       </b-row>
         <b-row align-h="center">
         <div class="text-white mt-0" style="font-size: 10px;">
