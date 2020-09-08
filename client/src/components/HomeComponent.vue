@@ -1,11 +1,6 @@
 <template>
-  <b-container fluid>
+  <b-container class="px-0" fluid>
     <div class="parallax">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <br />
       <br />
       <br />
@@ -50,7 +45,7 @@
       <br />
       <br />
     </div>
-    <div class="text-white" align="center" >
+    <div class="text-white px-4" align="center" >
       <h1 class="font-weight-bold mt-4 mb-4">About Me</h1>
       <div class="text-white" align="center" >
         <p>
@@ -60,7 +55,7 @@
         </p>
         <p>
           <i>
-              "Our mission is to lead the world in transforming lives to create a healthy future for all individuals and communities through premier educational programs, innovative research and extraordinary patient care.""
+              "Our mission is to lead the world in transforming lives to create a healthy future for all individuals and communities through premier educational programs, innovative research and extraordinary patient care."
           </i>
         <p>
         <p>
@@ -142,7 +137,7 @@
         <h1 class="font-weight-bold mt-4">My Journey</h1>
       </b-row>
       <br />
-      <!-- <b-row align="center">
+      <b-row align="center">
         <b-col>
           <b-card
             img-src="https://www.unmc.edu/iexcel/_images/davisglobalcenter.jpg"
@@ -291,7 +286,7 @@
               </b-row>
             </b-card-text>
           </b-card>
-      </b-row> -->
+      </b-row>
     </div>
     <br />
     <div class="parallax" style="height:300px">
@@ -371,10 +366,6 @@ body {
   font-size: 1em;
   font-family: inherit;
 }
-html {
-  font-family: gotham rounded, sans-serif;
-  font-size: 100%;
-}
 </style>
 <script>
 export default {
@@ -384,9 +375,7 @@ export default {
     };
   },
   computed: {
-        pageTitle: function() {
-            return this.$route.meta.title;
-        }
+
     },
   methods: {
     showContactModal(){

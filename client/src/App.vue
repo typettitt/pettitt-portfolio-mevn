@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid>
+  <b-container class="px-0" fluid>
       <!-- <b-row align-h="center">
         <b-nav fixed-top>
           <b-nav-item>
