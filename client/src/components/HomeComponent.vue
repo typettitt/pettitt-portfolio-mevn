@@ -12,11 +12,7 @@
       <div class="text-white text-center">
         <b-row align-h="center">
           <h1 class="text-white text-uppercase font-weight-bold mb-2">
-            <img
-              class="circular--square"
-              width="50%"
-              src="../assets/images/square-headshot.jpg"
-            />
+            <img class="circular--square" width="50%" src="../assets/images/square-headshot.jpg" />
           </h1>
         </b-row>
         <b-row align-h="center">
@@ -50,27 +46,27 @@
     </div>
     <!--  *******************************ABOUT ME*******************************
           *********************************************************************
-          ********************************************************************* -->
-    <div class="text-white px-4" align="center" >
+    *********************************************************************-->
+    <div class="text-white px-4" align="center">
       <h1 class="font-weight-bold mt-4 mb-4">About Me</h1>
-      <div class="text-white" align="center" >
+      <div class="text-white" align="center">
         <p>
-            I have worked in the software industry for 3 years. 
-            I'm currently a Software Engineer at the University of Nebraska Medical Center, a leader in the world of pateient care, research, and education. 
-            I get to do meaningful work every day to further company goals and embrace the mission at UNMC:
+          I have worked in the software industry for 3 years.
+          I'm currently a Software Engineer at the University of Nebraska Medical Center, a leader in the world of pateient care, research, and education.
+          I get to do meaningful work every day to further company goals and embrace the mission at UNMC:
         </p>
         <p>
-          <i>
-              "Our mission is to lead the world in transforming lives to create a healthy future for all individuals and communities through premier educational programs, innovative research and extraordinary patient care."
-          </i>
+          <i>"Our mission is to lead the world in transforming lives to create a healthy future for all individuals and communities through premier educational programs, innovative research and extraordinary patient care."</i>
+        </p>
+        <p></p>
         <p>
-        <p>
-          During my time at UNMC, I have worked hard to maintain my status as an eternal student, learning never stops. 
-          Staying open-minded with a positive can-do attitude has brought me where I am today. 
+          During my time at UNMC, I have worked hard to maintain my status as an eternal student, learning never stops.
+          Staying open-minded with a positive can-do attitude has brought me where I am today.
           In my free time, you'll find me enjoying the great outdoors. A few things I like to do include exercising, playing sand volleyball, watching motorsports, snowboarding, reading, and simply just enjoying time with my Border Collie Sadie.
-          My favorite place to be is somewhere in the mountains but as I get older, I'm finding that a beach is becoming a solid contender. 
+          My favorite place to be is somewhere in the mountains but as I get older, I'm finding that a beach is becoming a solid contender.
         </p>
-      </div><br />
+      </div>
+      <br />
       <br />
       <br />
     </div>
@@ -116,18 +112,18 @@
           >DO NOT BE AFRAID OF FAILURE</a>
         </b-row>
       </div>
-      <br/>
+      <br />
     </div>
     <!--  *******************************JOURNEY*******************************
           *********************************************************************
-          ********************************************************************* -->
+    *********************************************************************-->
     <div class="text-white px-4">
       <b-row align-h="center">
         <h1 class="font-weight-bold mt-4">My Journey</h1>
       </b-row>
       <br />
-      <b-row align="center">
-        <b-col>
+      <div>
+        <b-card-group deck>
           <b-card
             bg-variant="dark"
             border-variant="secondary"
@@ -152,8 +148,6 @@
               </b-row>
             </b-card-text>
           </b-card>
-        </b-col>
-        <b-col>
           <b-card
             bg-variant="dark"
             border-variant="secondary"
@@ -163,7 +157,11 @@
             <b-card-text>
               <b-row align-h="left">
                 <h4>
-                  <a class="nounderline text-primary" href="https://daycos.com/" target="_blank">Daycos</a>
+                  <a
+                    class="nounderline text-primary"
+                    href="https://daycos.com/"
+                    target="_blank"
+                  >Daycos</a>
                 </h4>
               </b-row>
               <b-row align-h="left">
@@ -174,10 +172,10 @@
               </b-row>
             </b-card-text>
           </b-card>
-        </b-col>
-      </b-row>
-      <b-row align="center">
-        <b-col>
+        </b-card-group>
+      </div>
+      <div>
+        <b-card-group deck>
           <b-card
             bg-variant="dark"
             border-variant="secondary"
@@ -202,8 +200,6 @@
               </b-row>
             </b-card-text>
           </b-card>
-        </b-col>
-        <b-col>
           <b-card
             bg-variant="dark"
             border-variant="secondary"
@@ -228,10 +224,10 @@
               </b-row>
             </b-card-text>
           </b-card>
-        </b-col>
-      </b-row>
-       <b-row align="center">
-         <b-col>
+        </b-card-group>
+      </div>
+      <div>
+        <b-card-group deck>
           <b-card
             bg-variant="dark"
             border-variant="secondary"
@@ -256,13 +252,11 @@
               </b-row>
             </b-card-text>
           </b-card>
-        </b-col>
-        <b-col>
           <b-card
             bg-variant="dark"
             border-variant="secondary"
             class="mb-4"
-            style="max-width: 50rem;"
+            style="max-width: 50rem; max-height: 50rem;"
           >
             <b-card-text>
               <b-row align-h="left">
@@ -282,49 +276,54 @@
               </b-row>
             </b-card-text>
           </b-card>
-        </b-col>
-        </b-row>
+        </b-card-group>
+      </div>
     </div>
     <br />
     <!--  *******************************Networking*******************************
           *********************************************************************
-          ********************************************************************* -->
-      <b-row align-h="center">
-        <h1 class="font-weight-bold text-white mt-4 mb-4">Stay In Touch</h1>
-      </b-row>
-      <b-row align-h="center" class="mb-4">
-        <a href="https://github.com/typettitt" target="_blank">
-          <img
-            src="../assets/social-media-icons/039-github.png"
-            alt="github"
-            width="50px"
-            height="50px"
-            class="mr-4"
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/tyler-pettitt/" target="_blank">
-          <img
-            src="../assets/social-media-icons/031-linkedin.png"
-            alt="linkedin"
-            width="50px"
-            height="50px"
-          />
-        </a>
-      </b-row>
-      <div class="text-white" align="center">
-        This projcet was built using the MEVN(MongoDB, Express, Vue, Node) stack and can be found by clicking on the github logo below.
+    *********************************************************************-->
+    <b-row align-h="center">
+      <h1 class="font-weight-bold text-white mt-4 mb-4">Stay In Touch</h1>
+    </b-row>
+    <b-row align-h="center" class="mb-4">
+      <a href="https://github.com/typettitt" target="_blank">
+        <img
+          src="../assets/social-media-icons/039-github.png"
+          alt="github"
+          width="50px"
+          height="50px"
+          class="mr-4"
+        />
+      </a>
+      <a href="https://www.linkedin.com/in/tyler-pettitt/" target="_blank">
+        <img
+          src="../assets/social-media-icons/031-linkedin.png"
+          alt="linkedin"
+          width="50px"
+          height="50px"
+        />
+      </a>
+    </b-row>
+    <div
+      class="text-white px-4"
+      align="center"
+    >This projcet was built using the MEVN(MongoDB, Express, Vue, Node) stack and can be found by clicking on the github logo below.</div>
+    <b-row align-h="center">
+      <div class="text-white mt-2" style="font-size: 10px;">
+        Icons made by
+        <a
+          class="nounderline"
+          href="https://www.flaticon.com/authors/pixel-perfect"
+          title="Pixel perfect"
+        >Pixel perfect</a> from
+        <a
+          class="nounderline"
+          href="https://www.flaticon.com/"
+          title="Flaticon"
+        >www.flaticon.com</a>
       </div>
-      <b-row align-h="center">
-        <div class="text-white mt-2" style="font-size: 10px;">
-            Icons made by
-            <a
-            class="nounderline"
-            href="https://www.flaticon.com/authors/pixel-perfect"
-            title="Pixel perfect"
-            >Pixel perfect</a> from
-            <a class="nounderline" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </div>
-        </b-row>
+    </b-row>
   </b-container>
 </template>
 <style>
@@ -346,10 +345,11 @@
 .circular--square {
   border-radius: 50%;
 }
-html, body {
+html,
+body {
   background-color: rgb(0, 0, 0);
   font-size: 1em;
-  font-family: 'Roboto Slab';
+  font-family: "Roboto Slab";
   overflow-x: hidden;
 }
 </style>
@@ -360,11 +360,8 @@ export default {
       post: {},
     };
   },
-  computed: {
-
-    },
+  computed: {},
   methods: {
-    showContactModal(){
-    }
+    showContactModal() {},
   },
 };
