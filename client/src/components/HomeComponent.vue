@@ -6,6 +6,9 @@
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
       <div class="text-white text-center">
         <b-row align-h="center">
           <h1 class="text-white text-uppercase font-weight-bold mb-2">
@@ -45,6 +48,9 @@
       <br />
       <br />
     </div>
+    <!--  *******************************ABOUT ME*******************************
+          *********************************************************************
+          ********************************************************************* -->
     <div class="text-white px-4" align="center" >
       <h1 class="font-weight-bold mt-4 mb-4">About Me</h1>
       <div class="text-white" align="center" >
@@ -61,28 +67,8 @@
         <p>
           During my time at UNMC, I have worked hard to maintain my status as an eternal student, learning never stops. 
           Staying open-minded with a positive can-do attitude has brought me where I am today. 
-          In my free time you'll find me enjoying the great outdoors. 
+          In my free time, you'll find me enjoying the great outdoors. A few things I like to do include exercising, playing sand volleyball, watching motorsports, snowboarding, reading, and simply just enjoying time with my Border Collie Sadie.
           My favorite place to be is somewhere in the mountains but as I get older, I'm finding that a beach is becoming a solid contender. 
-          Some things I enjoy when not at work are sand volleyball, hiking, snowboarding, and motorsports.
-        </p>
-        <p>
-          As I look into the future, time is becoming evermore important to me as well as truly enjoying what I do. 
-          When coming face-to-face with future opportunities, I ask myself the following: 
-        </p>
-        <p>
-          Would I take pride in my job? 
-        </p>
-        <p>
-          Would I be doing meaningful work? 
-        </p>
-        <p>
-          What is the company culture like? 
-        </p>
-        <p>
-          How is the work-life balance? 
-        </p>
-        <p>
-          What learning opportunities are there to further my knowledge?
         </p>
       </div><br />
       <br />
@@ -132,7 +118,10 @@
       </div>
       <br/>
     </div>
-    <div class="text-white" style="height:1350px">
+    <!--  *******************************JOURNEY*******************************
+          *********************************************************************
+          ********************************************************************* -->
+    <div class="text-white px-4">
       <b-row align-h="center">
         <h1 class="font-weight-bold mt-4">My Journey</h1>
       </b-row>
@@ -140,20 +129,16 @@
       <b-row align="center">
         <b-col>
           <b-card
-            img-src="https://www.unmc.edu/iexcel/_images/davisglobalcenter.jpg"
-            img-alt="Image"
-            img-top
-            img-height="250"
-            img-width="400"
-            style="max-width: 30rem;"
             bg-variant="dark"
-            class="mb-2"
+            border-variant="secondary"
+            class="mb-4"
+            style="max-width: 50rem;"
           >
             <b-card-text>
               <b-row align-h="left">
-                <h4 class="text-primary">
+                <h4>
                   <a
-                    class="nounderline"
+                    class="nounderline text-primary"
                     href="https://www.unmc.edu/"
                     target="_blank"
                   >University of Nebraska Medical Center</a>
@@ -170,19 +155,15 @@
         </b-col>
         <b-col>
           <b-card
-            img-src="https://merkelelectric.com/img/merkelelectric-2.jpg"
-            img-alt="Image"
-            img-top
-            img-height="250"
-            img-width="250"
             bg-variant="dark"
-            style="max-width: 30rem;"
-            class="mb-2"
+            border-variant="secondary"
+            class="mb-4"
+            style="max-width: 50rem;"
           >
             <b-card-text>
               <b-row align-h="left">
-                <h4 class="text-primary">
-                  <a class="nounderline" href="https://daycos.com/" target="_blank">Daycos</a>
+                <h4>
+                  <a class="nounderline text-primary" href="https://daycos.com/" target="_blank">Daycos</a>
                 </h4>
               </b-row>
               <b-row align-h="left">
@@ -198,14 +179,36 @@
       <b-row align="center">
         <b-col>
           <b-card
-            img-src="https://www.collegeconsensus.com/wp-content/uploads/2016/12/Wayne-State-1000x667.jpg"
-            img-alt="Image"
-            img-top
-            img-height="250"
-            img-width="250"
-            style="max-width: 30rem;"
             bg-variant="dark"
-            class="mb-2"
+            border-variant="secondary"
+            class="mb-4"
+            style="max-width: 50rem;"
+          >
+            <b-card-text>
+              <b-row align-h="left">
+                <h4>
+                  <a
+                    class="nounderline text-primary"
+                    href="https://www.unmc.edu/"
+                    target="_blank"
+                  >Bestorq, Inc. (Internship)</a>
+                </h4>
+              </b-row>
+              <b-row align-h="left">
+                <h5 class="text-success">May 2017 - August 2017</h5>
+              </b-row>
+              <b-row align-h="left">
+                <h6>Lincoln, Nebraska</h6>
+              </b-row>
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card
+            bg-variant="dark"
+            border-variant="secondary"
+            class="mb-4"
+            style="max-width: 50rem;"
           >
             <b-card-text>
               <b-row align-h="left">
@@ -226,16 +229,14 @@
             </b-card-text>
           </b-card>
         </b-col>
-        <b-col>
+      </b-row>
+       <b-row align="center">
+         <b-col>
           <b-card
-            img-src="https://upload.wikimedia.org/wikipedia/commons/4/43/Northeast_Community_College_welcome_center.JPG"
-            img-alt="Image"
-            img-top
-            img-height="250"
-            img-width="250"
-            style="max-width: 30rem;"
             bg-variant="dark"
-            class="mb-2"
+            border-variant="secondary"
+            class="mb-4"
+            style="max-width: 50rem;"
           >
             <b-card-text>
               <b-row align-h="left">
@@ -256,24 +257,19 @@
             </b-card-text>
           </b-card>
         </b-col>
-      </b-row>
-      <b-row align-h="center">
+        <b-col>
           <b-card
-            img-src="https://scontent-dfw5-2.xx.fbcdn.net/v/t31.0-8/p720x720/14468713_1094310667282796_3692220376977735575_o.jpg?_nc_cat=104&_nc_sid=dd9801&_nc_ohc=tiabAwzSW0YAX-Xg4yP&_nc_ht=scontent-dfw5-2.xx&tp=6&oh=2bd39078f63b54a5412bc14aaea8adac&oe=5F73AA2C"
-            img-alt="Image"
-            img-top
-            img-height="250"
-            img-width="250"
-            style="max-width: 30rem;"
             bg-variant="dark"
-            class="mb-2"
+            border-variant="secondary"
+            class="mb-4"
+            style="max-width: 50rem;"
           >
             <b-card-text>
               <b-row align-h="left">
-                <h4 class="text-primary">
+                <h4>
                   <a
-                    class="nounderline"
-                    href="https://www.piercepublic.org/"
+                    class="nounderline text-primary"
+                    href="https://www.unmc.edu/"
                     target="_blank"
                   >Pierce Jr. Sr. High</a>
                 </h4>
@@ -286,38 +282,40 @@
               </b-row>
             </b-card-text>
           </b-card>
-      </b-row>
+        </b-col>
+        </b-row>
     </div>
     <br />
-    <div class="parallax" style="height:300px">
+    <!--  *******************************Networking*******************************
+          *********************************************************************
+          ********************************************************************* -->
       <b-row align-h="center">
-        <h1 class="font-weight-bold text-white mt-4 mb-4">Let's Stay In Touch</h1>
+        <h1 class="font-weight-bold text-white mt-4 mb-4">Stay In Touch</h1>
       </b-row>
-      <b-row align-h="center">
+      <b-row align-h="center" class="mb-4">
         <a href="https://github.com/typettitt" target="_blank">
           <img
             src="../assets/social-media-icons/039-github.png"
             alt="github"
-            width="100px"
-            height="100px"
+            width="50px"
+            height="50px"
+            class="mr-4"
           />
         </a>
         <a href="https://www.linkedin.com/in/tyler-pettitt/" target="_blank">
           <img
             src="../assets/social-media-icons/031-linkedin.png"
             alt="linkedin"
-            width="100px"
-            height="100px"
+            width="50px"
+            height="50px"
           />
         </a>
       </b-row>
+      <div class="text-white" align="center">
+        This projcet was built using the MEVN(MongoDB, Express, Vue, Node) stack and can be found by clicking on the github logo below.
+      </div>
       <b-row align-h="center">
-        <!-- <h2 class="font-weight-bold text-white mt-4 mb-4">
-          <b-button variant="outline-primary" v-on:click="showContactModal()">Contact Me</b-button>
-        </h2> -->
-      </b-row>
-        <b-row align-h="center">
-        <div class="text-white mt-0" style="font-size: 10px;">
+        <div class="text-white mt-2" style="font-size: 10px;">
             Icons made by
             <a
             class="nounderline"
@@ -327,26 +325,13 @@
             <a class="nounderline" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
         </div>
         </b-row>
-    </div>
-    <br />
   </b-container>
 </template>
 <style>
 .parallax {
   background: url("../assets/images/bridger-range.jpg") no-repeat center center
     fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
-}
-.parallax2 {
-  background: url("../assets/images/green-pasture.jpg") no-repeat center center
-    fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
 .link {
   color: white;
@@ -361,10 +346,11 @@
 .circular--square {
   border-radius: 50%;
 }
-body {
+html, body {
   background-color: rgb(0, 0, 0);
   font-size: 1em;
-  font-family: inherit;
+  font-family: 'Roboto Slab';
+  overflow-x: hidden;
 }
 </style>
 <script>
@@ -379,7 +365,6 @@ export default {
     },
   methods: {
     showContactModal(){
-        //alert('clicked');
     }
   },
 };

@@ -1,6 +1,5 @@
 const path = require('path');
 const { dirname } = require('path');
-
 module.exports = {
   outputDir: path.resolve(__dirname, '../server/public'),
   devServer: {
