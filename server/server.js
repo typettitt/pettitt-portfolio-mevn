@@ -12,7 +12,7 @@ const postRoute = require('./api/post.route');
 
 //DB Connection
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb+srv://" + process.env.DB_USER + ":" + process.env.DB_PASS + "@pettitt-andromeda.oiri9.mongodb.net/pettitt-portfolio-db?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(
+mongoose.connect("mongodb+srv://" + process.env.DB_USER + ":" + process.env.DB_PASS + "@pettitt-andromeda.oiri9.mongodb.net/" + process.env.DB_PASS + "?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(
     () => {
         console.log('Database is connected')
     },
