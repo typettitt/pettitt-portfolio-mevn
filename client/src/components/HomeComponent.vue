@@ -308,7 +308,8 @@
     <div
       class="text-white px-4"
       align="center"
-    >This projcet was built using the MEVN(MongoDB, Express, Vue, Node) stack and can be found by clicking on the github logo below.</div>
+      style="font-size: 10px;"
+    >This projcet was built using the MEVN(MongoDB, Express, Vue, Node) stack. The entire project can be found on my github linked above.</div>
     <b-row align-h="center">
       <div class="text-white mt-2" style="font-size: 10px;">
         Icons made by
