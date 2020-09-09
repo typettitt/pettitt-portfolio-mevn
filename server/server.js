@@ -1,7 +1,9 @@
+require('dotenv').config()
+
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const PORT = 4000;
+const PORT = process.env.PORT;
 const cors = require('cors');
 const mongoose = require('mongoose');
 
@@ -10,7 +12,7 @@ const postRoute = require('./api/post.route');
 
 //DB Connection
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb+srv://admin-pettitt:yT36kOyylMzCcykF@pettitt-andromeda.oiri9.mongodb.net/pettitt-portfolio-db?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(
+mongoose.connect("mongodb+srv://" + process.env.DB_USER + ":" + process.env.DB_PASS + "@pettitt-andromeda.oiri9.mongodb.net/pettitt-portfolio-db?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }).then(
     () => {
         console.log('Database is connected')
     },
@@ -31,6 +33,6 @@ if(process.env.NODE_ENV == 'production'){
     //Handle SPA
     app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'));
 }
-app.listen(process.env.PORT || PORT, function () {
-    console.log('Server is running on Port:', PORT);
+app.listen(process.env.PORT, function () {
+    console.log('Server is running on Port:', process.env.PORT);
 });
