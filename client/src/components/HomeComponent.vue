@@ -48,7 +48,7 @@
         <p>
           During my time at UNMC, I have worked hard to maintain my status as an eternal student.
           Staying open-minded with a positive can-do attitude has brought me every career opportunity thus far.
-          In my free time, you'll find me enjoying the folowwing: exercising, playing sand volleyball, watching motorsports, snowboarding, reading, and simply just enjoying time with my border collie Sadie.
+          In my free time, you'll find me enjoying the following: exercising, playing sand volleyball, watching motorsports, snowboarding, reading, and simply just enjoying time with my border collie Sadie.
         </p>
       </div>
       <br />
