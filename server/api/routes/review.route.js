@@ -1,0 +1,67 @@
+const express = require('express');
+const reviewRoutes = express.Router();
+// Require Review model in our routes module
+let Review = require('../models/review.model');
+// post review
+reviewRoutes.route('/').post(function (req, res) {
+    let review = new Review(req.body);
+    review.save()
+        .then(() => {
+            res.status(200).json({ 'business': 'business in added successfully' });
+        })
+        .catch(() => {
+            res.status(400).send("unable to save to database");
+        });
+});
+// get reviews
+reviewRoutes.route('/').get(function (req, res) {
+    Review.find(function (err, reviews) {
+        if (err) {
+            res.json(err);
+        }
+        else {
+            res.json(reviews);
+        }
+    });
+});
+// get review by id
+reviewRoutes.route('/:id').get(function (req, res) {
+    let id = req.params.id;
+    Review.findById(id, function (err, review) {
+        if (err) {
+            res.json(err);
+        }else if(!review){
+            res.status(200).json({"message": "no results found"});
+        }else{
+            res.json(review);
+        }
+    });
+});
+//  review update route
+reviewRoutes.route('/:id').post(function (req, res) {
+    Review.findById(req.params.id, function (err, review) {
+        if (!review){
+            res.status(404).send("data is not found");
+        }
+        else {
+            review.first_name = req.body.first_name;
+            review.last_name = req.body.last_name;
+            review.email = req.body.email;
+            review.description = req.body.description;
+            review.save().then(() => {
+                res.json('review successfully updated');
+            })
+                .catch(() => {
+                    res.status(400).send("unable to update the database");
+                });
+        }
+    });
+});
+// delete review by id
+reviewRoutes.route('/:id').delete(function (req, res) {
+    Review.findByIdAndRemove({ _id: req.params.id }, function (err) {
+        if (err) res.json(err);
+        else res.json('Successfully removed');
+    });
+});
+module.exports = reviewRoutes;
