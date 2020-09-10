@@ -37,7 +37,7 @@
       <h1 class="font-weight-bold mt-4 mb-4">About Me</h1>
       <div class="text-white" align="center">
         <p>
-          I have worked in the software industry for 3 years.
+          After earning my Bachelor's degree in Computer Science, I have been working as a software engineer for 3 years.
           I'm currently a Software Engineer at the University of Nebraska Medical Center, a leader in the world of pateient care, research, and education.
           I get to do meaningful work every day to further company goals and embrace the mission at UNMC:
         </p>
@@ -46,10 +46,9 @@
         </p>
         <p></p>
         <p>
-          During my time at UNMC, I have worked hard to maintain my status as an eternal student, learning never stops.
-          Staying open-minded with a positive can-do attitude has brought me where I am today.
-          In my free time, you'll find me enjoying the great outdoors. A few things I like to do include exercising, playing sand volleyball, watching motorsports, snowboarding, reading, and simply just enjoying time with my Border Collie Sadie.
-          My favorite place to be is somewhere in the mountains but as I get older, I'm finding that a beach is becoming a solid contender.
+          During my time at UNMC, I have worked hard to maintain my status as an eternal student.
+          Staying open-minded with a positive can-do attitude has brought me every career opportunity thus far.
+          In my free time, you'll find me enjoying the folowwing: exercising, playing sand volleyball, watching motorsports, snowboarding, reading, and simply just enjoying time with my border collie Sadie.
         </p>
       </div>
       <br />
