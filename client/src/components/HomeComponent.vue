@@ -1,6 +1,6 @@
 <template>
   <b-container class="px-0" fluid>
-    <div class="parallax">
+    <div class="parallax" style="height: 100vh">
       <br />
       <br />
       <br />
@@ -29,20 +29,6 @@
           <p class="text-white text-uppercase font-weight-bold mb-2">Omaha, Nebraska</p>
         </b-row>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
     <!--  *******************************ABOUT ME*******************************
           *********************************************************************
@@ -117,172 +103,136 @@
     <!--  *******************************JOURNEY*******************************
           *********************************************************************
     *********************************************************************-->
-    <div class="text-white px-4">
+    <div class="text-white px-4" align="center">
       <b-row align-h="center">
         <h1 class="font-weight-bold mt-4">My Journey</h1>
       </b-row>
       <br />
-      <div>
-        <b-card-group deck>
-          <b-card
-            bg-variant="dark"
-            border-variant="secondary"
-            class="mb-4"
-            style="max-width: 50rem;"
-          >
-            <b-card-text>
-              <b-row align-h="left">
-                <h4>
-                  <a
-                    class="nounderline text-primary"
-                    href="https://www.unmc.edu/"
-                    target="_blank"
-                  >University of Nebraska Medical Center</a>
-                </h4>
-              </b-row>
-              <b-row align-h="left">
-                <h5 class="text-success">August 2019 - Present</h5>
-              </b-row>
-              <b-row align-h="left">
-                <h6>Omaha, Nebraska</h6>
-              </b-row>
-            </b-card-text>
-          </b-card>
-          <b-card
-            bg-variant="dark"
-            border-variant="secondary"
-            class="mb-4"
-            style="max-width: 50rem;"
-          >
-            <b-card-text>
-              <b-row align-h="left">
-                <h4>
-                  <a
-                    class="nounderline text-primary"
-                    href="https://daycos.com/"
-                    target="_blank"
-                  >Daycos</a>
-                </h4>
-              </b-row>
-              <b-row align-h="left">
-                <h5 class="text-success">March 2018 - August 2019</h5>
-              </b-row>
-              <b-row align-h="left">
-                <h6>Norfolk, Nebraska</h6>
-              </b-row>
-            </b-card-text>
-          </b-card>
-        </b-card-group>
-      </div>
-      <div>
-        <b-card-group deck>
-          <b-card
-            bg-variant="dark"
-            border-variant="secondary"
-            class="mb-4"
-            style="max-width: 50rem;"
-          >
-            <b-card-text>
-              <b-row align-h="left">
-                <h4>
-                  <a
-                    class="nounderline text-primary"
-                    href="https://www.unmc.edu/"
-                    target="_blank"
-                  >Bestorq, Inc. (Internship)</a>
-                </h4>
-              </b-row>
-              <b-row align-h="left">
-                <h5 class="text-success">May 2017 - August 2017</h5>
-              </b-row>
-              <b-row align-h="left">
-                <h6>Lincoln, Nebraska</h6>
-              </b-row>
-            </b-card-text>
-          </b-card>
-          <b-card
-            bg-variant="dark"
-            border-variant="secondary"
-            class="mb-4"
-            style="max-width: 50rem;"
-          >
-            <b-card-text>
-              <b-row align-h="left">
-                <h4 class="text-primary">
-                  <a
-                    class="nounderline"
-                    href="https://www.wsc.edu/"
-                    target="_blank"
-                  >Wayne State College</a>
-                </h4>
-              </b-row>
-              <b-row align-h="left">
-                <h5 class="text-success">B.S. in Computer Science, May 2018</h5>
-              </b-row>
-              <b-row align-h="left">
-                <h6>Wayne, Nebraska</h6>
-              </b-row>
-            </b-card-text>
-          </b-card>
-        </b-card-group>
-      </div>
-      <div>
-        <b-card-group deck>
-          <b-card
-            bg-variant="dark"
-            border-variant="secondary"
-            class="mb-4"
-            style="max-width: 50rem;"
-          >
-            <b-card-text>
-              <b-row align-h="left">
-                <h4 class="text-primary">
-                  <a
-                    class="nounderline"
-                    href="https://northeast.edu/"
-                    target="_blank"
-                  >Northeast Community College</a>
-                </h4>
-              </b-row>
-              <b-row align-h="left">
-                <h5 class="text-success">A.S. General Studies, May 2016</h5>
-              </b-row>
-              <b-row align-h="left">
-                <h6>Norfolk, Nebraska</h6>
-              </b-row>
-            </b-card-text>
-          </b-card>
-          <b-card
-            bg-variant="dark"
-            border-variant="secondary"
-            class="mb-4"
-            style="max-width: 50rem; max-height: 50rem;"
-          >
-            <b-card-text>
-              <b-row align-h="left">
-                <h4>
-                  <a
-                    class="nounderline text-primary"
-                    href="https://www.unmc.edu/"
-                    target="_blank"
-                  >Pierce Jr. Sr. High</a>
-                </h4>
-              </b-row>
-              <b-row align-h="left">
-                <h5 class="text-success">Class of 2013</h5>
-              </b-row>
-              <b-row align-h="left">
-                <h6>Pierce, Nebraska</h6>
-              </b-row>
-            </b-card-text>
-          </b-card>
-        </b-card-group>
-      </div>
+        <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+          <b-card-text>
+            <b-row align-h="left">
+              <h4>
+                <a
+                  class="nounderline text-primary"
+                  href="https://www.unmc.edu/"
+                  target="_blank"
+                >University of Nebraska Medical Center</a>
+              </h4>
+            </b-row>
+            <b-row align-h="left">
+              <h5 class="text-success">August 2019 - Present</h5>
+            </b-row>
+            <b-row align-h="left">
+              <h6>Omaha, Nebraska</h6>
+            </b-row>
+          </b-card-text>
+        </b-card>
+        <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+          <b-card-text>
+            <b-row align-h="left">
+              <h4>
+                <a
+                  class="nounderline text-primary"
+                  href="https://daycos.com/"
+                  target="_blank"
+                >Daycos</a>
+              </h4>
+            </b-row>
+            <b-row align-h="left">
+              <h5 class="text-success">March 2018 - August 2019</h5>
+            </b-row>
+            <b-row align-h="left">
+              <h6>Norfolk, Nebraska</h6>
+            </b-row>
+          </b-card-text>
+        </b-card>
+        <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+          <b-card-text>
+            <b-row align-h="left">
+              <h4>
+                <a
+                  class="nounderline text-primary"
+                  href="https://www.unmc.edu/"
+                  target="_blank"
+                >Bestorq, Inc. (Internship)</a>
+              </h4>
+            </b-row>
+            <b-row align-h="left">
+              <h5 class="text-success">May 2017 - August 2017</h5>
+            </b-row>
+            <b-row align-h="left">
+              <h6>Lincoln, Nebraska</h6>
+            </b-row>
+          </b-card-text>
+        </b-card>
+        <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+          <b-card-text>
+            <b-row align-h="left">
+              <h4 class="text-primary">
+                <a
+                  class="nounderline"
+                  href="https://www.wsc.edu/"
+                  target="_blank"
+                >Wayne State College</a>
+              </h4>
+            </b-row>
+            <b-row align-h="left">
+              <h5 class="text-success">B.S. in Computer Science, May 2018</h5>
+            </b-row>
+            <b-row align-h="left">
+              <h6>Wayne, Nebraska</h6>
+            </b-row>
+          </b-card-text>
+        </b-card>
+        <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+          <b-card-text>
+            <b-row align-h="left">
+              <h4 class="text-primary">
+                <a
+                  class="nounderline"
+                  href="https://northeast.edu/"
+                  target="_blank"
+                >Northeast Community College</a>
+              </h4>
+            </b-row>
+            <b-row align-h="left">
+              <h5 class="text-success">A.S. General Studies, May 2016</h5>
+            </b-row>
+            <b-row align-h="left">
+              <h6>Norfolk, Nebraska</h6>
+            </b-row>
+          </b-card-text>
+        </b-card>
+        <b-card
+          bg-variant="dark"
+          border-variant="secondary"
+          class="mb-4"
+          style="max-width: 50rem; max-height: 50rem;"
+        >
+          <b-card-text>
+            <b-row align-h="left">
+              <h4>
+                <a
+                  class="nounderline text-primary"
+                  href="https://www.unmc.edu/"
+                  target="_blank"
+                >Pierce Jr. Sr. High</a>
+              </h4>
+            </b-row>
+            <b-row align-h="left">
+              <h5 class="text-success">Class of 2013</h5>
+            </b-row>
+            <b-row align-h="left">
+              <h6>Pierce, Nebraska</h6>
+            </b-row>
+          </b-card-text>
+        </b-card>
     </div>
     <br />
     <!--  *******************************Networking*******************************
           *********************************************************************
     *********************************************************************-->
+    <div class="parallax">
     <b-row align-h="center">
       <h1 class="font-weight-bold text-white mt-4 mb-4">Stay In Touch</h1>
     </b-row>
@@ -325,6 +275,7 @@
         >www.flaticon.com</a>
       </div>
     </b-row>
+    </div>
   </b-container>
 </template>
 <style>
@@ -362,7 +313,5 @@ export default {
     };
   },
   computed: {},
-  methods: {
-    showContactModal() {},
-  },
+  methods: {},
 };

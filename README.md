@@ -3,7 +3,7 @@
 ## About the Project
 This project utilizes the MEVN stack(MongoDB, Express, Vue.js, Node.js) to display my professional experience thus far in my career.
 
-Link: (PENDING)
+[Link to live portfolio](tylerpettitt.me)
 
 ## Project setup
 ```
@@ -32,7 +32,7 @@ npm run lint
 ```
 ### Deployment Instructions
 client:
-``
+```
 npm run build:
 ```
 make sure most recent changes committed
