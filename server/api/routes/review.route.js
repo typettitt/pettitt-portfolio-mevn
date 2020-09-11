@@ -15,7 +15,7 @@ reviewRoutes.route('/').post(function (req, res) {
 });
 // get reviews
 reviewRoutes.route('/').get(function (req, res) {
-    Review.find(function (err, reviews) {
+    Review.find({}).sort({created_at: 'descending'}).find(function (err, reviews) {
         if (err) {
             res.status(400).json(err);
         }
