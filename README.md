@@ -1,9 +1,9 @@
 # Tyler Pettitt's Professional Portfolio
 
 ## About the Project
-This project utilizes the MEVN stack(MongoDB, Express, Vue.js, Node.js) to display my professional experience thus far in my career.
+This project utilizes the MEVN stack(MongoDB, Express, Vue.js, Node.js) to display my professional experience thus far in my career. This project is hosted on heroku and can be found at this URL: tylerpettitt.me
 
-[Link to live portfolio](tylerpettitt.me)
+To demo database CRUD operations, visit tylerpettitt.me/review and leave your thoughts on the project. This data will be purged every so often.
 
 ## Project setup
 ```
@@ -35,8 +35,7 @@ client:
 ```
 npm run build:
 ```
-make sure most recent changes committed
-project directory(I have to do this in powershell for some reason):
+make sure most recent changes committed:
 ```
 git add .
 git status

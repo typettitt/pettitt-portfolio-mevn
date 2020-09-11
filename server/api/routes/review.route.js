@@ -7,7 +7,7 @@ reviewRoutes.route('/').post(function (req, res) {
     let review = new Review(req.body);
     review.save()
         .then(() => {
-            res.status(200).json({ 'business': 'business in added successfully' });
+            res.status(200).json({ 'message': 'review submitted successfully' });
         })
         .catch(() => {
             res.status(400).send("unable to save to database");
@@ -17,10 +17,10 @@ reviewRoutes.route('/').post(function (req, res) {
 reviewRoutes.route('/').get(function (req, res) {
     Review.find(function (err, reviews) {
         if (err) {
-            res.json(err);
+            res.status(400).json(err);
         }
         else {
-            res.json(reviews);
+            res.status(200).json(reviews);
         }
     });
 });
@@ -47,12 +47,14 @@ reviewRoutes.route('/:id').post(function (req, res) {
             review.first_name = req.body.first_name;
             review.last_name = req.body.last_name;
             review.email = req.body.email;
+            review.title = req.body.title;
+            review.organization = req.body.organization;
             review.description = req.body.description;
             review.save().then(() => {
-                res.json('review successfully updated');
+                res.status(200).json({"message": "review successfully updated"});
             })
                 .catch(() => {
-                    res.status(400).send("unable to update the database");
+                    res.status(400).json({"message": "unable to update review"});
                 });
         }
     });
@@ -61,7 +63,7 @@ reviewRoutes.route('/:id').post(function (req, res) {
 reviewRoutes.route('/:id').delete(function (req, res) {
     Review.findByIdAndRemove({ _id: req.params.id }, function (err) {
         if (err) res.json(err);
-        else res.json('Successfully removed');
+        else res.status(200).json({"message": "review deleted"});
     });
 });
 module.exports = reviewRoutes;

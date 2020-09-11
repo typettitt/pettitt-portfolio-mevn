@@ -4,17 +4,17 @@ import VueRouter from 'vue-router';
 import {BootstrapVue, BootstrapVueIcons} from 'bootstrap-vue'
 import VueAxios from 'vue-axios';
 import axios from 'axios';
+import moment from 'moment';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import HomeComponent from './components/HomeComponent.vue';
-import CreateComponent from './components/CreateComponent.vue';
-import IndexComponent from './components/IndexComponent.vue';
-import EditComponent from './components/EditComponent.vue';
+import ReviewComponent from './components/ReviewComponent.vue';
 
 
 Vue.use(VueRouter);
 Vue.use(VueAxios, axios);
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
+Vue.prototype.moment = moment
 
 Vue.config.productionTip = false;
 
@@ -28,19 +28,9 @@ const routes = [
     }
   },
   {
-    name: 'create',
-    path: '/create',
-    component: CreateComponent
-  },
-  {
-    name: 'posts',
-    path: '/posts',
-    component: IndexComponent
-  },
-  {
-    name: 'edit',
-    path: '/edit/:id',
-    component: EditComponent
+    name: 'review',
+    path: '/review',
+    component: ReviewComponent
   }
 ];
 const router = new VueRouter({ mode: 'history', routes: routes });

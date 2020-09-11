@@ -12,6 +12,12 @@ let Review = new Schema({
     email: {
         type: String
     },
+    title: {
+        type: String
+    },
+    organization: {
+        type: String
+    },
     description: {
         type: String,
         required: true
