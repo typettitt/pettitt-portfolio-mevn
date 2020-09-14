@@ -57,11 +57,11 @@
     </div>
     <div class="parallax">
       <b-row align-h="center">
-        <h1 class="font-weight-bold text-white mt-4 mb-0">My System</h1>
+        <h1 class="font-weight-bold text-white mt-4 mb-2">My System</h1>
       </b-row>
       <div class="text-white" align="center">
-        <br />
-        <b-row class="mt-2 mb-4" align-h="center">
+        <p style="font-size: 10px;">(They're links, click 'em!)</p>
+        <b-row class="mt-2 mb-2" align-h="center">
           <a
             class="nounderline link"
             href="https://www.linkedin.com/pulse/contagious-positivity-secret-weapon-successful-emil-hauch-jensen/"
