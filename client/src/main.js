@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import HomeComponent from './components/HomeComponent.vue';
-import ReviewComponent from './components/ReviewComponent.vue';
+import CommentsComponent from './components/CommentsComponent.vue';
 
 
 Vue.use(VueRouter);
@@ -30,9 +30,9 @@ const routes = [
     }
   },
   {
-    name: 'review',
-    path: '/review',
-    component: ReviewComponent
+    name: 'comments',
+    path: '/comments',
+    component: CommentsComponent
   }
 ];
 const router = new VueRouter({ mode: 'history', routes: routes });
