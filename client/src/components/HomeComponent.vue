@@ -109,7 +109,7 @@
       <br />
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
           <b-card-text>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h4>
                 <a
                   class="nounderline text-primary"
@@ -118,17 +118,17 @@
                 >University of Nebraska Medical Center</a>
               </h4>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h5 class="text-success">August 2019 - Present</h5>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h6>Omaha, Nebraska</h6>
             </b-row>
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
           <b-card-text>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h4>
                 <a
                   class="nounderline text-primary"
@@ -137,17 +137,17 @@
                 >Daycos</a>
               </h4>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h5 class="text-success">March 2018 - August 2019</h5>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h6>Norfolk, Nebraska</h6>
             </b-row>
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
           <b-card-text>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h4>
                 <a
                   class="nounderline text-primary"
@@ -156,17 +156,17 @@
                 >Bestorq, Inc. (Internship)</a>
               </h4>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h5 class="text-success">May 2017 - August 2017</h5>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h6>Lincoln, Nebraska</h6>
             </b-row>
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
           <b-card-text>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h4 class="text-primary">
                 <a
                   class="nounderline"
@@ -175,17 +175,17 @@
                 >Wayne State College</a>
               </h4>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h5 class="text-success">B.S. in Computer Science, May 2018</h5>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h6>Wayne, Nebraska</h6>
             </b-row>
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
           <b-card-text>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h4 class="text-primary">
                 <a
                   class="nounderline"
@@ -194,10 +194,10 @@
                 >Northeast Community College</a>
               </h4>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h5 class="text-success">A.S. General Studies, May 2016</h5>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h6>Norfolk, Nebraska</h6>
             </b-row>
           </b-card-text>
@@ -209,7 +209,7 @@
           style="max-width: 50rem; max-height: 50rem;"
         >
           <b-card-text>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h4>
                 <a
                   class="nounderline text-primary"
@@ -218,10 +218,10 @@
                 >Pierce Jr. Sr. High</a>
               </h4>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h5 class="text-success">Class of 2013</h5>
             </b-row>
-            <b-row align-h="left">
+            <b-row align-h="start">
               <h6>Pierce, Nebraska</h6>
             </b-row>
           </b-card-text>
