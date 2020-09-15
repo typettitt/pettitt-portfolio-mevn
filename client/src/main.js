@@ -6,6 +6,8 @@ import VueAxios from 'vue-axios';
 import axios from 'axios';
 import moment from 'moment';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import HomeComponent from './components/HomeComponent.vue';
 import ReviewComponent from './components/ReviewComponent.vue';
 

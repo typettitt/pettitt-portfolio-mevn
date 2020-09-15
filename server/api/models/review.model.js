@@ -22,22 +22,26 @@ let Review = new Schema({
         type: String,
         required: true
     },
+    pin: {
+        type: Number,
+        required: true
+    },
     created_at: {
         type: Date
     },
     updated_at: {
         type: Date
     }
-}, 
-{
-    collection: 'reviews'
-});
+},
+    {
+        collection: 'reviews'
+    });
 
 //create date and updated date
-Review.pre('save', function(next){
+Review.pre('save', function (next) {
     now = new Date();
     this.updated_at = now;
-    if ( !this.created_at ) {
+    if (!this.created_at) {
         this.created_at = now;
     }
     next();

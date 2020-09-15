@@ -11,7 +11,7 @@ npm install
 #### Compiles and hot-reloads for frontend development
 In the client directory:
 ```
-npm run serve
+npm run server
 ```
 #### Compiles and hot-reloads for backend development
 In the server directory:

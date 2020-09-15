@@ -15,7 +15,7 @@ reviewRoutes.route('/').post(function (req, res) {
 });
 // get reviews
 reviewRoutes.route('/').get(function (req, res) {
-    Review.find({}).sort({created_at: 'descending'}).find(function (err, reviews) {
+    Review.find({}).sort({ created_at: 'descending' }).find(function (err, reviews) {
         if (err) {
             res.status(400).json(err);
         }
@@ -30,9 +30,9 @@ reviewRoutes.route('/:id').get(function (req, res) {
     Review.findById(id, function (err, review) {
         if (err) {
             res.json(err);
-        }else if(!review){
-            res.status(200).json({"message": "no results found"});
-        }else{
+        } else if (!review) {
+            res.status(200).json({ "message": "no results found" });
+        } else {
             res.json(review);
         }
     });
@@ -40,7 +40,7 @@ reviewRoutes.route('/:id').get(function (req, res) {
 //  review update route
 reviewRoutes.route('/:id').post(function (req, res) {
     Review.findById(req.params.id, function (err, review) {
-        if (!review){
+        if (!review) {
             res.status(404).send("data is not found");
         }
         else {
@@ -51,10 +51,10 @@ reviewRoutes.route('/:id').post(function (req, res) {
             review.organization = req.body.organization;
             review.description = req.body.description;
             review.save().then(() => {
-                res.status(200).json({"message": "review successfully updated"});
+                res.status(200).json({ "message": "review successfully updated" });
             })
                 .catch(() => {
-                    res.status(400).json({"message": "unable to update review"});
+                    res.status(400).json({ "message": "unable to update review" });
                 });
         }
     });
@@ -63,7 +63,7 @@ reviewRoutes.route('/:id').post(function (req, res) {
 reviewRoutes.route('/:id').delete(function (req, res) {
     Review.findByIdAndRemove({ _id: req.params.id }, function (err) {
         if (err) res.json(err);
-        else res.status(200).json({"message": "review deleted"});
+        else res.status(200).json({ "message": "review deleted" });
     });
 });
 module.exports = reviewRoutes;
