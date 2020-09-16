@@ -21,7 +21,7 @@
               variant="secondary"
               class="mx-2"
               size="sm"
-              @click="openEditModal(review._id)"
+              @click="verifyEdit(review._id)"
             >Edit</b-button>
             <b-button
               type="submit"
@@ -392,12 +392,12 @@ export default {
 
     },
     verifyEdit(id) {
-      console.log(id);
+      this.getReview(id);
       this.verifySubmit = "Edit";
+      this.$bvModal.show("modal-verify");
     },
     verifyDelete(id) {
       this.getReview(id);
-      console.log(id);
       this.verifySubmit = "Delete";
       this.$bvModal.show("modal-verify");
     },
@@ -409,7 +409,11 @@ export default {
           console.log("incorrect PIN");
         }
       }else if(this.verifySubmit == "Edit"){
-          console.log("open edit modal");
+        if(this.verifyPin == this.oneReview.pin){
+          this.$bvModal.show("modal-edit-review");
+        }else{
+          console.log("incorrect PIN");
+        }
       }
     },
     submitCreateModalForm() {
