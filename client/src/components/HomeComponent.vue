@@ -151,7 +151,7 @@
               <h4>
                 <a
                   class="nounderline text-primary"
-                  href="https://www.unmc.edu/"
+                  href="https://www.bestorq.com/"
                   target="_blank"
                 >Bestorq, Inc. (Internship)</a>
               </h4>
@@ -213,7 +213,7 @@
               <h4>
                 <a
                   class="nounderline text-primary"
-                  href="https://www.unmc.edu/"
+                  href="https://www.piercepublic.org/"
                   target="_blank"
                 >Pierce Jr. Sr. High</a>
               </h4>
