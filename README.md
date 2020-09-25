@@ -1,14 +1,15 @@
 # Tyler Pettitt's Professional Portfolio
-
+----
 ## About the Project
-This project utilizes the MEVN stack(MongoDB, Express, Vue.js, Node.js) to display my professional experience thus far in my career. This project is hosted on heroku and can be found at this URL: tylerpettitt.me
+This project utilizes the MEVN stack(MongoDB, Express, Vue.js, Node.js) to display my professional experience thus far in my career. This project is hosted on heroku and can be found on my own custom domain [here](http://www.tylerpettitt.me "Pettitt Portfolio").
 
+----
 ## To-Do List: 
-  - Add tests with Mocha/Chai
-  - Finish Comments page to demonstrate CRUD operations with MongoDB
-  - Format all code
-  - Remove unused assets
-
+  - [ ] Add tests with Mocha/Chai
+  - [ ] Finish Comments page to demonstrate CRUD operations with MongoDB
+  - [ ] Format all code
+  - [X] Remove unused assets
+----
 ## Project setup
 ```
 npm install
@@ -48,6 +49,7 @@ git commit -m "write your own commit message"
 git push heroku master
 ```
 
+----
 ## License and copyright
 
 © Tyler J Pettitt
