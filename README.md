@@ -7,6 +7,7 @@ This project utilizes the MEVN stack(MongoDB, Express, Vue.js, Node.js) to displ
   - Add tests with Mocha/Chai
   - Finish Comments page to demonstrate CRUD operations with MongoDB
   - Format all code
+  - Remove unused assets
 
 ## Project setup
 ```
