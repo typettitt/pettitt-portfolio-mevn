@@ -3,6 +3,11 @@
 ## About the Project
 This project utilizes the MEVN stack(MongoDB, Express, Vue.js, Node.js) to display my professional experience thus far in my career. This project is hosted on heroku and can be found at this URL: tylerpettitt.me
 
+## To-Do List: 
+  - Add tests with Mocha/Chai
+  - Finish Comments page to demonstrate CRUD operations with MongoDB
+  - Format all code
+
 ## Project setup
 ```
 npm install
