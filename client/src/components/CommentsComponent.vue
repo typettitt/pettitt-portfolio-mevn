@@ -18,7 +18,6 @@
           <b-row align-h="between" class="mb-2">
             <b-col align="left" cols="6">
               <small class="mr-2">{{comment.first_name + ' ' + comment.last_name}}</small>
-              <!-- <small class="mr-2">{{comment.title}}</small> -->
             </b-col>
             <b-col align="right" cols="6">
               <small>{{moment(comment.created_at).fromNow()}}</small>
@@ -31,14 +30,14 @@
               variant="secondary"
               class="mx-2"
               size="sm"
-              @click="verifyEdit(comment._id)"
+              @click="openEditModal(comment._id)"
             >Edit</b-button>
             <b-button
               type="button"
               variant="danger"
               class="mx-2"
               size="sm"
-              @click="verifyDelete(comment._id)"
+              @click="deleteComment(comment._id)"
             >Delete</b-button>
           </b-row>
         </b-card-text>
@@ -115,59 +114,24 @@
         </b-row>
       </b-form>
     </b-modal>
-    <!-- **************************************************** -->
-    <!--*******************VERIFICATION MODAL***************-->
-    <!-- **************************************************** -->
-    <b-modal
-      id="modal-verify"
-      title="Enter Your PIN"
-      v-show="showVerifyModal"
-      @hide="cancelVerifyModal"
-      button-size="sm"
-      hide-footer
-    >
-      <b-form @submit="submitVerifyModal" @reset="resetVerifyForm">
-        <b-row>
-          <b-col>
-             <b-form-group id="input-group-8" label="PIN" label-for="input-8">
-              <b-form-input
-                id="input-8"
-                v-model="verifyPin"
-                type="number"
-                maxlength="4"
-                autocomplete="off"
-                required
-              ></b-form-input>
-            </b-form-group>
-            <b-tooltip target="input-8" triggers="focus" placement="bottomleft">
-              Enter the PIN you used to create this comment. 
-            </b-tooltip>
-          </b-col>
-        </b-row>
-        <b-row align-h="end">
-          <b-button type="reset" variant="secondary" class="mx-2">Reset</b-button>
-          <b-button type="submit" variant="primary" class="mx-2">{{verifySubmit}}</b-button>
-        </b-row>
-      </b-form>
-    </b-modal>
     <!-- ******************************************************** -->
     <!--*******************EDIT comment MODAL****************-->
     <!-- **************************************************** -->
     <b-modal
       id="modal-edit-comment"
-      title="Your comment"
+      title="Edit Your Comment"
       v-show="showEditModal"
       @hide="cancelEditModal"
       button-size="sm"
       hide-footer
     >
-      <b-form @submit="submitCreateModalForm" @reset="resetCreateModalForm">
+      <b-form>
         <b-row>
           <b-col>
             <b-form-group id="input-group-1" label="First Name" label-for="input-1">
               <b-form-input
                 id="input-1"
-                v-model="comment.first_name"
+                v-model="editComment.first_name"
                 type="text"
                 required
                 autocomplete="off"
@@ -176,21 +140,21 @@
           </b-col>
           <b-col>
             <b-form-group id="input-group-2" label="Last Name" label-for="input-2">
-              <b-form-input id="input-2" v-model="comment.last_name" type="text" autocomplete="off"></b-form-input>
+              <b-form-input id="input-2" v-model="editComment.last_name" type="text" autocomplete="off"></b-form-input>
             </b-form-group>
           </b-col>
         </b-row>
         <b-row>
           <b-col>
             <b-form-group id="input-group-3" label="Title" label-for="input-3">
-              <b-form-input id="input-3" v-model="comment.title" type="text" autocomplete="off"></b-form-input>
+              <b-form-input id="input-3" v-model="editComment.title" type="text" autocomplete="off"></b-form-input>
             </b-form-group>
           </b-col>
           <b-col>
             <b-form-group id="input-group-4" label="Organization" label-for="input-4">
               <b-form-input
                 id="input-4"
-                v-model="comment.organization"
+                v-model="editComment.organization"
                 type="text"
                 autocomplete="off"
               ></b-form-input>
@@ -202,7 +166,7 @@
             <b-form-group id="input-group-7" label="comment" label-for="input-7">
               <b-form-textarea
                 id="input-7"
-                v-model="comment.description"
+                v-model="editComment.description"
                 placeholder="Enter your comment here..."
                 required
                 rows="3"
@@ -216,8 +180,8 @@
         </b-row>
         {{ totalCharacter }} / 150
         <b-row align-h="end">
-          <b-button type="reset" variant="secondary" class="mx-2">Reset</b-button>
-          <b-button type="submit" variant="primary" class="mx-2">Submit</b-button>
+          <b-button type="button"  @click= cancelEditModal variant="secondary" class="mx-2">Cancel</b-button>
+          <b-button type="button"  @click= submitEditModalForm variant="primary" class="mx-2">Submit</b-button>
         </b-row>
       </b-form>
     </b-modal>
@@ -235,7 +199,7 @@ export default {
         description: "",
       },
       allComments: [],
-      oneComment: {
+      editComment: {
         id: "",
         first_name: "",
         last_name: "",
@@ -276,7 +240,8 @@ export default {
       this.$bvModal.show("modal-add-comment");
     },
     openEditModal(id) {
-      console.log(id);
+      this.getComment(id);
+      this.$bvModal.show("modal-edit-comment");
     },
     cancelCreateModal() {
       this.$bvModal.hide("modal-add-comment");
@@ -291,20 +256,17 @@ export default {
       this.comment.description = "";
     },
     resetOneComment() {
-      this.oneComment.id = "";
-      this.oneComment.first_name = "";
-      this.oneComment.last_name = "";
-      this.oneComment.title = "";
-      this.oneComment.organization = "";
-      this.oneComment.description = "";
+      this.editComment.id = "";
+      this.editComment.first_name = "";
+      this.editComment.last_name = "";
+      this.editComment.title = "";
+      this.editComment.organization = "";
+      this.editComment.description = "";
     },
     cancelEditModal() {
       this.$bvModal.hide("modal-edit-comment");
       this.showEditModal = false;
       this.resetEditModalForm();
-    },
-    cancelVerifyModal() {
-      
     },
     resetEditModalForm() {
       this.comment.first_name = "";
@@ -313,40 +275,19 @@ export default {
       this.comment.organization = "";
       this.comment.description = "";
     },
-    resetVerifyForm(){
-
-    },
-    verifyEdit(id) {
-      this.getComment(id);
-      this.verifySubmit = "Edit";
-      this.$bvModal.show("modal-verify");
-    },
-    verifyDelete(id) {
-      this.getComment(id);
-      this.verifySubmit = "Delete";
-      this.$bvModal.show("modal-verify");
-    },
-    submitVerifyModal() {
-      if(this.verifySubmit == "Delete"){
-        if(this.verifyPin == this.oneComment.pin){
-          this.deleteComment(this.oneComment.id);
-        }else{
-          console.log("incorrect PIN");
-        }
-      }else if(this.verifySubmit == "Edit"){
-        if(this.verifyPin == this.oneComment.pin){
-          this.$bvModal.show("modal-edit-comment");
-        }else{
-          console.log("incorrect PIN");
-        }
-      }
-    },
     submitCreateModalForm() {
       let uri = "api/comment";
       this.axios.post(uri, this.comment).then(() => {
-        this.$router.push({ name: "comment" });
         this.getAllComments();
       });
+    },
+    submitEditModalForm() {
+      let uri = "api/comment/" + this.editComment.id;
+        console.log(uri);
+      this.axios.post(uri, this.editComment).then(() => {
+        this.getAllComments();
+        this.cancelEditModal()
+      })
     },
     deleteComment(id){
       let uri = "api/comment/"+ id;
@@ -354,7 +295,7 @@ export default {
       this.axios
         .delete(uri)
         .then(() => {
-          //this.allComments.splice(this.selected.indexOf(id), 1);
+          this.getAllComments();
         })
         .catch(function (error) {
           console.log(error);
@@ -366,12 +307,12 @@ export default {
       this.axios
         .get(uri)
         .then((response) => {
-          this.oneComment.id = response.data._id;
-          this.oneComment.first_name = response.data.first_name;
-          this.oneComment.last_name = response.data.last_name;
-          this.oneComment.title = response.data.title;
-          this.oneComment.organization = response.data.organization;
-          this.oneComment.description = response.data.description;
+          this.editComment.id = response.data._id;
+          this.editComment.first_name = response.data.first_name;
+          this.editComment.last_name = response.data.last_name;
+          this.editComment.title = response.data.title;
+          this.editComment.organization = response.data.organization;
+          this.editComment.description = response.data.description;
         })
         .catch(function (error) {
           console.log(error);
