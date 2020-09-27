@@ -7,7 +7,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 //add routes
-const reviewRoute = require('./api/routes/review.route');
+const commentRoute = require('./api/routes/comment.route');
 
 //DB Connection
 mongoose.Promise = global.Promise;
@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //add routes
-app.use('/api/review', reviewRoute);
+app.use('/api/comment', commentRoute);
 
 //handle production
 if(process.env.NODE_ENV == 'production'){

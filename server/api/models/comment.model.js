@@ -1,15 +1,12 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-// Define collection and schema for Review
-let Review = new Schema({
+// Define collection and schema for Comment
+let Comment = new Schema({
     first_name: {
         type: String,
         required: true
     },
     last_name: {
-        type: String
-    },
-    email: {
         type: String
     },
     title: {
@@ -22,10 +19,6 @@ let Review = new Schema({
         type: String,
         required: true
     },
-    pin: {
-        type: Number,
-        required: true
-    },
     created_at: {
         type: Date
     },
@@ -34,11 +27,11 @@ let Review = new Schema({
     }
 },
     {
-        collection: 'reviews'
+        collection: 'comments'
     });
 
 //create date and updated date
-Review.pre('save', function (next) {
+Comment.pre('save', function (next) {
     now = new Date();
     this.updated_at = now;
     if (!this.created_at) {
@@ -47,4 +40,4 @@ Review.pre('save', function (next) {
     next();
 });
 
-module.exports = mongoose.model('Review', Review);
+module.exports = mongoose.model('Comment', Comment);
