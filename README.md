@@ -5,10 +5,10 @@ This project utilizes the MEVN stack(MongoDB, Express, Vue.js, Node.js) to displ
 
 ----
 ## To-Do List: 
-  - [ ] API Authentication
   - [ ] Add tests with Mocha/Chai
   - [ ] Add link to comments page in Stay In Touch section
   - [ ] Format all code
+  - [X] API Authentication via JWT
   - [X] Finish Comments page to demonstrate CRUD operations with MongoDB
   - [X] Remove unused assets
 ----
