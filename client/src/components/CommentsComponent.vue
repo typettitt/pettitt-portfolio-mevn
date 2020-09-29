@@ -131,7 +131,7 @@
             <b-form-group id="input-group-1" label="First Name" label-for="input-1">
               <b-form-input
                 id="input-1"
-                v-model="editComment.first_name"
+                v-model="comment.first_name"
                 type="text"
                 required
                 autocomplete="off"
@@ -140,21 +140,21 @@
           </b-col>
           <b-col>
             <b-form-group id="input-group-2" label="Last Name" label-for="input-2">
-              <b-form-input id="input-2" v-model="editComment.last_name" type="text" autocomplete="off"></b-form-input>
+              <b-form-input id="input-2" v-model="comment.last_name" type="text" autocomplete="off"></b-form-input>
             </b-form-group>
           </b-col>
         </b-row>
         <b-row>
           <b-col>
             <b-form-group id="input-group-3" label="Title" label-for="input-3">
-              <b-form-input id="input-3" v-model="editComment.title" type="text" autocomplete="off"></b-form-input>
+              <b-form-input id="input-3" v-model="comment.title" type="text" autocomplete="off"></b-form-input>
             </b-form-group>
           </b-col>
           <b-col>
             <b-form-group id="input-group-4" label="Organization" label-for="input-4">
               <b-form-input
                 id="input-4"
-                v-model="editComment.organization"
+                v-model="comment.organization"
                 type="text"
                 autocomplete="off"
               ></b-form-input>
@@ -166,7 +166,7 @@
             <b-form-group id="input-group-7" label="comment" label-for="input-7">
               <b-form-textarea
                 id="input-7"
-                v-model="editComment.description"
+                v-model="comment.description"
                 placeholder="Enter your comment here..."
                 required
                 rows="3"
@@ -199,15 +199,6 @@ export default {
         description: "",
       },
       allComments: [],
-      editComment: {
-        id: "",
-        first_name: "",
-        last_name: "",
-        title: "",
-        organization: "",
-        description: "",
-        pin: "",
-      },
       showCreateModal: false,
       showEditModal: false,
       showVerifyModal: false,
@@ -256,12 +247,12 @@ export default {
       this.comment.description = "";
     },
     resetOneComment() {
-      this.editComment.id = "";
-      this.editComment.first_name = "";
-      this.editComment.last_name = "";
-      this.editComment.title = "";
-      this.editComment.organization = "";
-      this.editComment.description = "";
+      this.comment.id = "";
+      this.comment.first_name = "";
+      this.comment.last_name = "";
+      this.comment.title = "";
+      this.comment.organization = "";
+      this.comment.description = "";
     },
     cancelEditModal() {
       this.$bvModal.hide("modal-edit-comment");
@@ -282,9 +273,9 @@ export default {
       });
     },
     submitEditModalForm() {
-      let uri = "api/comment/" + this.editComment.id;
+      let uri = "api/comment/" + this.comment.id;
         console.log(uri);
-      this.axios.post(uri, this.editComment).then(() => {
+      this.axios.post(uri, this.comment).then(() => {
         this.getAllComments();
         this.cancelEditModal()
       })
@@ -307,12 +298,12 @@ export default {
       this.axios
         .get(uri)
         .then((response) => {
-          this.editComment.id = response.data._id;
-          this.editComment.first_name = response.data.first_name;
-          this.editComment.last_name = response.data.last_name;
-          this.editComment.title = response.data.title;
-          this.editComment.organization = response.data.organization;
-          this.editComment.description = response.data.description;
+          this.comment.id = response.data._id;
+          this.comment.first_name = response.data.first_name;
+          this.comment.last_name = response.data.last_name;
+          this.comment.title = response.data.title;
+          this.comment.organization = response.data.organization;
+          this.comment.description = response.data.description;
         })
         .catch(function (error) {
           console.log(error);
