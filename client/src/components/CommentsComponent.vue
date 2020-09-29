@@ -222,9 +222,6 @@ export default {
         .get(uri)
         .then((response) => {
           this.allComments = response.data;
-        })
-        .catch(function (error) {
-          console.log(error);
         });
     },
     openCreateModal() {
@@ -274,11 +271,10 @@ export default {
     },
     submitEditModalForm() {
       let uri = "api/comment/" + this.comment.id;
-        console.log(uri);
       this.axios.post(uri, this.comment).then(() => {
         this.getAllComments();
         this.cancelEditModal()
-      })
+      });
     },
     deleteComment(id){
       let uri = "api/comment/"+ id;
@@ -287,9 +283,6 @@ export default {
         .delete(uri)
         .then(() => {
           this.getAllComments();
-        })
-        .catch(function (error) {
-          console.log(error);
         });
     },
     getComment(id){
@@ -304,9 +297,6 @@ export default {
           this.comment.title = response.data.title;
           this.comment.organization = response.data.organization;
           this.comment.description = response.data.description;
-        })
-        .catch(function (error) {
-          console.log(error);
         });
     }
   },
