@@ -1,5 +1,4 @@
 require('dotenv').config()
-
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -8,6 +7,7 @@ const mongoose = require('mongoose');
 
 //add routes
 const commentRoute = require('./api/routes/comment.route');
+const jwtRoute = require('./api/routes/jwt.route');
 
 //DB Connection
 mongoose.Promise = global.Promise;
@@ -23,6 +23,7 @@ app.use(bodyParser.json());
 
 //add routes
 app.use('/api/comment', commentRoute);
+app.use('/api/jwt', jwtRoute);
 
 //handle production
 if(process.env.NODE_ENV == 'production'){

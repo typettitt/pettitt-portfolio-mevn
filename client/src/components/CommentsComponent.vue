@@ -206,7 +206,7 @@ export default {
       totalCharacter: 0,
       maxcommentLength: 150,
       verifyPin: "", 
-      verifySubmit: ""
+      verifySubmit: "",
     };
   },
   created() {
@@ -297,6 +297,14 @@ export default {
           this.comment.title = response.data.title;
           this.comment.organization = response.data.organization;
           this.comment.description = response.data.description;
+        });
+    },
+    getAuth(){
+      let uri = "api/jwt";
+      this.axios
+        .get(uri)
+        .then((response) => {
+          return response.data;
         });
     }
   },

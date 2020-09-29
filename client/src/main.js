@@ -42,4 +42,8 @@ router.beforeEach((to, from, next) => {
   next()
 });
 
+
+//jwt for API security
+axios.defaults.headers.common['Authorization'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MDEzOTk2MTh9.BJuivuH-Nx-fU10OpbBsD3qyhnpj6mhVAFiX0wwoM6c';
+
 new Vue(Vue.util.extend({ router }, App)).$mount('#app');
