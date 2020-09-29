@@ -299,14 +299,6 @@ export default {
           this.comment.description = response.data.description;
         });
     },
-    getAuth(){
-      let uri = "api/jwt";
-      this.axios
-        .get(uri)
-        .then((response) => {
-          return response.data;
-        });
-    }
   },
 };
 </script>

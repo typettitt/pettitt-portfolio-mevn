@@ -8,7 +8,7 @@ This project utilizes the MEVN stack(MongoDB, Express, Vue.js, Node.js) to displ
   - [ ] Add tests with Mocha/Chai
   - [ ] Add link to comments page in Stay In Touch section
   - [ ] Format all code
-  - [X] API Authentication via JWT
+  - [X] API Authentication POC - Not active but just experimenting
   - [X] Finish Comments page to demonstrate CRUD operations with MongoDB
   - [X] Remove unused assets
 ----

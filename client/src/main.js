@@ -41,9 +41,15 @@ router.beforeEach((to, from, next) => {
   document.title = to.meta.title || DEFAULT_TITLE
   next()
 });
-
-
-//jwt for API security
-axios.defaults.headers.common['Authorization'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MDEzOTk2MTh9.BJuivuH-Nx-fU10OpbBsD3qyhnpj6mhVAFiX0wwoM6c';
+// function getAuth(){
+//   let uri = "api/jwt";
+//   axios
+//     .get(uri)
+//     .then((response) => {
+//       return response.data;
+//     });
+// }
+//jwt
+//axios.defaults.headers.common['Authorization'] = getAuth();
 
 new Vue(Vue.util.extend({ router }, App)).$mount('#app');

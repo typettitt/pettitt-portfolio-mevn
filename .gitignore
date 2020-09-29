@@ -23,4 +23,4 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
-server/api/authentication/private.pem
+#server/api/authentication/private.pem

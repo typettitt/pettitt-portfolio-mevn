@@ -5,7 +5,7 @@ const jwtRoute = express.Router();
 
 // get jwt
 jwtRoute.route('/').get((req, res) => {
-    let privateKey = fs.readFileSync('./api/authentication/private.pem', 'utf8');
+    let privateKey = process.env.PRIVATE_KEY;
     let token = jwt.sign({ "body": "stuff" }, privateKey, { algorithm: 'HS256'});
     res.send(token);
 });
