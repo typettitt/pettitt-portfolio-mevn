@@ -7,13 +7,14 @@ The project is hosted on heroku and can be found on my own custom domain [here](
 
 ----
 ## To-Do List: 
-  - [ ] Add backend testing with Mocha/Chai
+  - [ ] Add backend testing with Mocha/Chai(Partially Done)
   - [ ] Update 'My Journey' section with better design
   - [ ] Add link to comments page in Stay In Touch section
   - [X] API Authentication POC - Not active but just experimenting
   - [X] Finish Comments page to demonstrate CRUD operations with MongoDB
   - [X] Remove unused assets
 ----
+
 ## License and copyright
 
 © Tyler J Pettitt
