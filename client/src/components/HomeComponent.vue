@@ -39,7 +39,7 @@
         <p>
           After earning my Bachelor's degree in Computer Science, I have been working as a software engineer for 3 years.
           I'm currently a Software Engineer at the University of Nebraska Medical Center, a leader in the world of pateient care, research, and education.
-          I take pride in being able to do meaningful work every day to further company goals and embrace the mission at UNMC:
+          I take pride in being able to do meaningful work every day to further organizational goals and embrace the mission at UNMC:
         </p>
         <p>
           <i>"Our mission is to lead the world in transforming lives to create a healthy future for all individuals and communities through premier educational programs, innovative research and extraordinary patient care."</i>
