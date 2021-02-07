@@ -17,17 +17,17 @@ The project is hosted on heroku and can be found on my own domain [here](http://
 ----
 ## Project Instructions
 ### To Run Client
-1. cd client
-2. npm run dev
+1. `cd client`
+2. `npm run dev`
 ### To Run Node.js Server
-1. cd server
-2. npm run dev
+1. `cd server`
+2. `npm run dev`
 ### Make a Production Build and deploy
-1. cd client
-2. npm run build
-3. cd server
+1. `cd client`
+2. `npm run build`
+3. `cd server`
 4. commit and push to github if you want
-5. git push heroku master
+5. `git push heroku master`
 
 ## License and copyright
 
