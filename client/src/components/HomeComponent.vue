@@ -26,7 +26,7 @@
           </h5>
         </b-row>
         <b-row align-h="center">
-          <p class="text-white text-uppercase font-weight-bold mb-2">Omaha, Nebraska</p>
+          <p class="text-white text-uppercase font-weight-bold mb-2">Norfolk, Nebraska</p>
         </b-row>
       </div>
     </div>
@@ -37,18 +37,9 @@
       <h1 class="font-weight-bold mt-4 mb-4">About Me</h1>
       <div class="text-white" align="center">
         <p>
-          After earning my Bachelor's degree in Computer Science, I have been working as a software engineer for 3 years.
-          I'm currently a Software Engineer at the University of Nebraska Medical Center, a leader in the world of pateient care, research, and education.
-          I take pride in being able to do meaningful work every day to further organizational goals and embrace the mission at UNMC:
-        </p>
+          After testing the waters in different majors like mechanical engineering, programming, and even the realm of healthcare, I earned my Bachelor's degree in Computer Science at Wayne State College in May of 2018. Before I graduated, I completed a summer internship at Bestorq, Inc. in Lincoln, Nebraska. At this internship, I was exposed to embedded software development where code was developed to control belt cutting and testing machines. I was also exposed to e-commerce web development. I then returned to school and accepted a job at Daycos in Norfolk, Nebraska. At Daycos I was exposed to .NET building microservices, APIs, maintaining desktop applications, and building new web applications with node.js, svelte.js, and graphQL all within the Sapper framework. I then made the move to the University of Nebraska Medical Center in Omaha, Nebraska where I currently am now. Here I work on internal web applications, backend processes such as billing and campus badge access, and also new development endeavors including moving to newer technologies like the laravel framework, CICD pipelines, API development, and git source control.        </p><p></p>
         <p>
-          <i>"Our mission is to lead the world in transforming lives to create a healthy future for all individuals and communities through premier educational programs, innovative research and extraordinary patient care."</i>
-        </p>
-        <p></p>
-        <p>
-          During my time at UNMC, I have worked hard to maintain my status as an eternal student by undergoing training, attending conferences, and self-learning.
-          Staying open-minded with a positive can-do attitude has brought me every career opportunity thus far.
-          In my free time, you'll find me enjoying the following: exercising, playing sand volleyball, watching motorsports, snowboarding, reading, and simply just enjoying time with my border collie Sadie.
+          During my career as a software engineer, I have worked hard to maintain my status as an eternal student through instructor-led training, conferences, and self-directed learning. Looking back, I think my ability to enter every situation I come across with an open-mind and also a positive attitude is what has brought me each and every opportunity thus far. 
         </p>
       </div>
       <br />
@@ -57,7 +48,7 @@
     </div>
     <div class="parallax">
       <b-row align-h="center">
-        <h1 class="font-weight-bold text-white mt-4 mb-2">My System</h1>
+        <h1 class="font-weight-bold text-white mt-4 mb-2">Core Values</h1>
       </b-row>
       <div class="text-white" align="center">
         <p style="font-size: 10px;">(They're links, click 'em!)</p>
@@ -104,7 +95,7 @@
     *********************************************************************-->
     <div class="text-white px-4" align="center">
       <b-row align-h="center">
-        <h1 class="font-weight-bold mt-4">My Journey</h1>
+        <h1 class="font-weight-bold mt-4">Journey</h1>
       </b-row>
       <br />
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
