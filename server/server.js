@@ -16,7 +16,7 @@ mongoose.connect("mongodb+srv://" + process.env.DB_USER + ":" + process.env.DB_P
     () => {
         console.log('Database connected: '+ process.env.DB_NAME);
     },
-    err => { console.log('Can not connect to the database: ' + err) }
+    err => { console.log('Cannot connect to the database: ' + err) }
 );
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
