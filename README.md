@@ -26,7 +26,7 @@ The project is hosted on heroku and can be found on my own domain [here](http://
 1. `cd client`
 2. `npm run build`
 3. `cd server`
-4. commit and push to github if you want
+4. `heroku login`
 5. `git push heroku master`
 
 ## License and copyright

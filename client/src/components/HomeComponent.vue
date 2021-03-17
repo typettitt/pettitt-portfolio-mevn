@@ -186,7 +186,7 @@
               </h4>
             </b-row>
             <b-row align-h="start">
-              <h5 class="text-success">A.S. General Studies, May 2016</h5>
+              <h5 class="text-success">A.A. General Studies, May 2016</h5>
             </b-row>
             <b-row align-h="start">
               <h6>Norfolk, Nebraska</h6>
