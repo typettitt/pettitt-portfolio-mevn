@@ -22,13 +22,15 @@ The project is hosted on heroku and can be found on my own domain [here](http://
 ### To Run Node.js Server
 1. `cd server`
 2. `npm run dev`
-### Make a Production Build and deploy
+### Make a Production Build, Commit to Remotes, and Deploy
 1. `cd client`
 2. `npm run build`
 3. `cd server`
-4. `cd server`
-5. `git push`
-6. `git push heroku master`
+4. `git add .`
+5. `git commit -m "your message here`
+6. `git push`
+7. `heroku login`
+8. `git push heroku master`
 
 ## License and copyright
 
