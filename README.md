@@ -27,7 +27,7 @@ The project is hosted on heroku and can be found on my own domain [here](http://
 2. `npm run build`
 3. `cd server`
 4. `git add .`
-5. `git commit -m "your message here`
+5. `git commit -m "your message here"`
 6. `git push`
 7. `heroku login`
 8. `git push heroku master`
