@@ -19,7 +19,7 @@ Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
 Vue.use(VueAnalytics, {
   // [Required] The name of your app as specified in Google Analytics.
-  appName: 'My Portfolio',
+  appName: 'Professional Portfolio',
   // [Required] The version of your app.
   appVersion: '1.0',
   // [Required] Your Google Analytics tracking ID.
