@@ -98,38 +98,45 @@
         <h1 class="font-weight-bold mt-4">Journey</h1>
       </b-row>
       <br />
-        <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+        <b-card
+          bg-variant="dark"
+          border-variant="secondary"
+          class="mb-4"
+          style="max-width: 50rem; max-height: 50rem;"
+        >
+        <b-img-lazy :src="require('@/assets/images/PHS.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4>
                 <a
                   class="nounderline text-primary"
-                  href="https://www.unmc.edu/"
+                  href="https://www.piercepublic.org/"
                   target="_blank"
-                >University of Nebraska Medical Center</a>
+                >Pierce Jr. Sr. High</a>
               </h4>
             </b-row>
             <b-row align-h="start">
-              <h5 class="text-success">August 2019 - Present</h5>
+              <h5 class="text-success">Class of 2013</h5>
             </b-row>
             <b-row align-h="start">
-              <h6>Omaha, Nebraska</h6>
+              <h6>Pierce, Nebraska</h6>
             </b-row>
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+          <b-img-lazy :src="require('@/assets/images/NECC.png')"/>
           <b-card-text>
             <b-row align-h="start">
-              <h4>
+              <h4 class="text-primary">
                 <a
-                  class="nounderline text-primary"
-                  href="https://daycos.com/"
+                  class="nounderline"
+                  href="https://northeast.edu/"
                   target="_blank"
-                >Daycos</a>
+                >Northeast Community College</a>
               </h4>
             </b-row>
             <b-row align-h="start">
-              <h5 class="text-success">March 2018 - August 2019</h5>
+              <h5 class="text-success">A.A. General Studies, May 2016</h5>
             </b-row>
             <b-row align-h="start">
               <h6>Norfolk, Nebraska</h6>
@@ -137,25 +144,7 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-card-text>
-            <b-row align-h="start">
-              <h4>
-                <a
-                  class="nounderline text-primary"
-                  href="https://www.bestorq.com/"
-                  target="_blank"
-                >Bestorq, Inc. (Internship)</a>
-              </h4>
-            </b-row>
-            <b-row align-h="start">
-              <h5 class="text-success">May 2017 - August 2017</h5>
-            </b-row>
-            <b-row align-h="start">
-              <h6>Lincoln, Nebraska</h6>
-            </b-row>
-          </b-card-text>
-        </b-card>
-        <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+          <b-img-lazy :src="require('@/assets/images/WSC.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4 class="text-primary">
@@ -175,45 +164,62 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+          <b-img-lazy :src="require('@/assets/images/Bestorq.png')"/>
           <b-card-text>
             <b-row align-h="start">
-              <h4 class="text-primary">
+              <h4>
                 <a
-                  class="nounderline"
-                  href="https://northeast.edu/"
+                  class="nounderline text-primary"
+                  href="https://www.bestorq.com/"
                   target="_blank"
-                >Northeast Community College</a>
+                >Bestorq, Inc. (Internship)</a>
               </h4>
             </b-row>
             <b-row align-h="start">
-              <h5 class="text-success">A.A. General Studies, May 2016</h5>
+              <h5 class="text-success">May 2017 - August 2017</h5>
+            </b-row>
+            <b-row align-h="start">
+              <h6>Lincoln, Nebraska</h6>
+            </b-row>
+          </b-card-text>
+        </b-card>
+        <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+          <b-img-lazy :src="require('@/assets/images/Daycos.png')"/>
+          <b-card-text>
+            <b-row align-h="start">
+              <h4>
+                <a
+                  class="nounderline text-primary"
+                  href="https://daycos.com/"
+                  target="_blank"
+                >Daycos</a>
+              </h4>
+            </b-row>
+            <b-row align-h="start">
+              <h5 class="text-success">March 2018 - August 2019</h5>
             </b-row>
             <b-row align-h="start">
               <h6>Norfolk, Nebraska</h6>
             </b-row>
           </b-card-text>
         </b-card>
-        <b-card
-          bg-variant="dark"
-          border-variant="secondary"
-          class="mb-4"
-          style="max-width: 50rem; max-height: 50rem;"
-        >
+        <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+          <b-img-lazy :src="require('@/assets/images/UNMC.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4>
                 <a
                   class="nounderline text-primary"
-                  href="https://www.piercepublic.org/"
+                  href="https://www.unmc.edu/"
                   target="_blank"
-                >Pierce Jr. Sr. High</a>
+                >University of Nebraska Medical Center</a>
               </h4>
             </b-row>
             <b-row align-h="start">
-              <h5 class="text-success">Class of 2013</h5>
+              <h5 class="text-success">August 2019 - Present</h5>
             </b-row>
             <b-row align-h="start">
-              <h6>Pierce, Nebraska</h6>
+              <h6>Omaha, Nebraska</h6>
             </b-row>
           </b-card-text>
         </b-card>
@@ -229,7 +235,7 @@
     <b-row align-h="center" class="mb-4">
       <a href="https://github.com/typettitt" target="_blank">
         <img
-          src="../assets/social-media-icons/039-github.png"
+          src="../assets/icons/039-github.png"
           alt="github"
           width="50px"
           height="50px"
@@ -238,7 +244,7 @@
       </a>
       <a href="https://www.linkedin.com/in/tyler-pettitt/" target="_blank">
         <img
-          src="../assets/social-media-icons/031-linkedin.png"
+          src="../assets/icons/031-linkedin.png"
           alt="linkedin"
           width="50px"
           height="50px"
