@@ -30,7 +30,8 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "nodemon": "^2.0.4",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vue-ua": "^1.7.0"
   },
   "eslintConfig": {
     "root": true,
