@@ -207,13 +207,13 @@
           <b-img-lazy fluid :src="require('@/assets/images/UNMC.png')"/>
           <b-card-text>
             <b-row align-h="start">
-              <h5>
+              <h4>
                 <a
                   class="nounderline text-primary"
                   href="https://www.unmc.edu/"
                   target="_blank"
                 >University of Nebraska Medical Center</a>
-              </h5>
+              </h4>
             </b-row>
             <b-row align-h="start">
               <h5 class="text-success">August 2019 - Present</h5>
