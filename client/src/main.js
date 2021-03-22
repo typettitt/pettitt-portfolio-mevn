@@ -5,7 +5,6 @@ import {BootstrapVue, BootstrapVueIcons} from 'bootstrap-vue'
 import VueAxios from 'vue-axios'
 import axios from 'axios'
 import moment from 'moment'
-import router from './router'
 import VueAnalytics from 'vue-analytics'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -19,8 +18,10 @@ Vue.use(VueAxios, axios);
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
 Vue.use(VueAnalytics, {
-  id: 'G-BE149TCXMK',
-  router
+  id: 'UA-192744249-1',
+  debug: {
+    sendHitTask: process.env.NODE_ENV === 'production'
+  }
 })
 Vue.prototype.moment = moment
 
