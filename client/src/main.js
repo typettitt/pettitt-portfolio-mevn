@@ -18,7 +18,9 @@ Vue.use(VueAxios, axios);
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
 Vue.use(VueGtag, {
-  config: { id: "UA-192744249-1" }
+  config: { id: "UA-192744249-1",
+  send_page_view:  process.env.NODE_ENV === 'production'
+}
 });
 Vue.prototype.moment = moment
 
