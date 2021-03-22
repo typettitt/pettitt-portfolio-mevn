@@ -9,7 +9,7 @@ The project is hosted on heroku and can be found on my own domain [here](http://
 ----
 ## To-Do List: 
   - [ ] Add backend testing with Mocha/Chai(Partially Done)
-  - [ ] Add message me button for visitors to send and email
+  - [X] Add message me button for visitors to send and email to me
   - [X] Update 'My Journey' section with better design
   - [X] API Authentication POC - Not active but just experimenting
   - [X] Finish Comments page to demonstrate CRUD operations with MongoDB

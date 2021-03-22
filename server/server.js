@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 
 //add routes
 const commentRoute = require('./api/routes/comment.route');
+const contactRoute = require('./api/routes/contact.route');
 const jwtRoute = require('./api/routes/jwt.route');
 const pulseRoute = require('./api/routes/pulse.route');
 
@@ -24,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //add routes
+app.use('/api/contact', contactRoute);
 app.use('/api/comment', commentRoute);
 app.use('/api/jwt', jwtRoute);
 app.use('/api/pulse', pulseRoute);

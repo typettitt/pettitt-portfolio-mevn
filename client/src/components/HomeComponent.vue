@@ -106,7 +106,7 @@
           class="mb-4"
           style="max-width: 50rem; max-height: 50rem;"
         >
-        <b-img-lazy fluid :src="require('@/assets/images/PHS.png')"/>
+        <b-img-lazy fluid class="mb-4" rounded :src="require('@/assets/images/PHS.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4>
@@ -128,7 +128,7 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-img-lazy fluid :src="require('@/assets/images/NECC.png')"/>
+          <b-img-lazy fluid class="mb-4" rounded :src="require('@/assets/images/NECC.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4 class="text-primary">
@@ -150,7 +150,7 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-img-lazy fluid :src="require('@/assets/images/Bestorq.png')"/>
+          <b-img-lazy fluid class="mb-4" rounded :src="require('@/assets/images/Bestorq.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4>
@@ -175,7 +175,7 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-img-lazy fluid :src="require('@/assets/images/WSC.png')"/>
+          <b-img-lazy fluid class="mb-4" rounded :src="require('@/assets/images/WSC.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4 class="text-primary">
@@ -197,7 +197,7 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-img-lazy fluid :src="require('@/assets/images/Daycos.png')"/>
+          <b-img-lazy fluid class="mb-4" rounded :src="require('@/assets/images/Daycos.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4>
@@ -224,7 +224,7 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-img-lazy fluid :src="require('@/assets/images/UNMC.png')"/>
+          <b-img-lazy fluid class="mb-4" rounded :src="require('@/assets/images/UNMC.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4>
@@ -282,6 +282,9 @@
           height="50px"
         />
       </a>
+      <b-button variant="outline-primary" class="mb-2 mt-2 ml-3" @click="openCreateModal()">
+        <b-icon icon="envelope" aria-hidden="true"></b-icon> Contact
+      </b-button>
     </b-row>
     <div
       class="text-white px-4"
@@ -304,8 +307,111 @@
       </div>
     </b-row>
     </div>
+     <!-- **************************************************** -->
+    <!--*******************CONTACT FORM MODAL*******************-->
+    <!-- **************************************************** -->
+    <b-modal
+      id="modal-contact"
+      title="Contact Form"
+      v-show="showCreateModal"
+      @hide="cancelCreateModal"
+      button-size="sm"
+      hide-footer
+    >
+      <b-form @submit="submitCreateModalForm" @reset="resetCreateModalForm" autocomplete="off">
+        <b-row>
+          <b-col>
+            <b-form-group id="input-group-1" label="Your Name" label-for="input-1">
+              <b-form-input
+                id="input-1"
+                v-model="contact.name"
+                type="text"
+                required
+                autocomplete="off"
+                data-lpignore="true"
+              ></b-form-input>
+            </b-form-group>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col>
+            <b-form-group id="input-group-3" label="Your Email" label-for="input-3">
+              <b-form-input id="input-3" required v-model="contact.email" type="email" data-lpignore="true" autocomplete="off"></b-form-input>
+            </b-form-group>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col>
+            <b-form-group id="input-group-7" label="Message" label-for="input-7">
+              <b-form-textarea
+                id="input-7"
+                v-model="contact.message"
+                placeholder="Enter your message here..."
+                required
+                rows="3"
+                :maxlength="maxcommentLength"
+                max-rows="6"
+                autocomplete="off"
+                @keyup="charCount()"
+              ></b-form-textarea>
+            </b-form-group>
+          </b-col>
+        </b-row>
+        {{ totalCharacter }} / 150
+        <b-row align-h="end">
+          <b-button type="reset" variant="secondary" class="mx-2">Reset</b-button>
+          <b-button type="submit" variant="primary" class="mx-2">Submit</b-button>
+        </b-row>
+      </b-form>
+    </b-modal>
   </b-container>
 </template>
+<script>
+export default {
+  data: function(){
+    return {
+      contact: {
+        name: "",
+        email: "",
+        message: "",
+      },
+      showCreateModal: false,
+      showEditModal: false,
+      showVerifyModal: false,
+      console: "",
+      totalCharacter: 0,
+      maxcommentLength: 150,
+      verifyPin: "", 
+      verifySubmit: "",
+    };
+  },
+  computed: {},
+  methods: {
+    charCount() {
+      this.totalCharacter = this.contact.message.length;
+    },
+    openCreateModal() {
+      this.$bvModal.show("modal-contact");
+    },
+    cancelCreateModal() {
+      this.$bvModal.hide("modal-contact");
+      this.showCreateModal = false;
+      this.resetCreateModalForm();
+    },
+    resetCreateModalForm() {
+      this.contact.name = "";
+      this.contact.email = "";
+      this.contact.message = "";
+      this.totalCharacter=0;
+    },
+    submitCreateModalForm() {
+      let uri = "api/contact";
+      this.axios.post(uri, this.contact);
+      //return false;
+    },
+  },
+};
+</script>
 <style>
 .parallax {
   background: url("../assets/images/bridger-range.jpg") no-repeat center center
@@ -336,13 +442,3 @@ body {
   display: none;
 }
 </style>
-<script>
-export default {
-  data() {
-    return {
-      post: {},
-    };
-  },
-  computed: {},
-  methods: {},
-};
