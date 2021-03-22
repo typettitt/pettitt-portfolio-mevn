@@ -9,8 +9,8 @@ The project is hosted on heroku and can be found on my own domain [here](http://
 ----
 ## To-Do List: 
   - [ ] Add backend testing with Mocha/Chai(Partially Done)
-  - [ ] Update 'My Journey' section with better design
-  - [ ] Add link to /comments page in Stay In Touch section
+  - [ ] Add message me button for visitors to send and email
+  - [X] Update 'My Journey' section with better design
   - [X] API Authentication POC - Not active but just experimenting
   - [X] Finish Comments page to demonstrate CRUD operations with MongoDB
   - [X] Remove unused assets

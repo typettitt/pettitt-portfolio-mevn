@@ -1,5 +1,5 @@
 <template>
-  <b-container class="px-0" fluid>
+  <b-container class="px-0" style=" -ms-overflow-style: none; scrollbar-width: none;" fluid>
     <div class="parallax" style="height: 100vh">
       <br />
       <br />
@@ -37,9 +37,11 @@
       <h1 class="font-weight-bold mt-4 mb-4">About Me</h1>
       <div class="text-white" align="center">
         <p>
-          After testing the waters in different majors like mechanical engineering, programming, and even the realm of healthcare, I earned my Bachelor's degree in Computer Science at Wayne State College in May of 2018. Before I graduated, I completed a summer internship at Bestorq, Inc. in Lincoln, Nebraska. At this internship, I was exposed to embedded software development where code was developed to control belt cutting and testing machines. I was also exposed to e-commerce web development. I then returned to school and accepted a job at Daycos in Norfolk, Nebraska. At Daycos I was exposed to .NET building microservices, APIs, maintaining desktop applications, and building new web applications with node.js, svelte.js, and graphQL all within the Sapper framework. I then made the move to the University of Nebraska Medical Center in Omaha, Nebraska where I currently am now. Here I work on internal web applications, backend processes such as billing and campus badge access, and also new development endeavors including moving to newer technologies like the laravel framework, CICD pipelines, API development, and git source control.        </p><p></p>
+        Hello, I'm Tyler Pettitt. I'm a full-stack software engineer with {{moment([2018, 2, 1]).fromNow(true)}} of experience.
+        </p>
         <p>
-          During my career as a software engineer, I have worked hard to maintain my status as an eternal student through instructor-led training, conferences, and self-directed learning. Looking back, I think my ability to enter every situation I come across with an open-mind and also a positive attitude is what has brought me each and every opportunity thus far. 
+        After testing the waters in different majors like mechanical engineering, programming, and even the realm of healthcare, I settled on computer science. I graduated from Northeast Community College in 2016 with an Associate of Arts degree where I mostly focused on general studies and a few information technology courses. From there, I earned my Bachelor's degree in Computer Science at Wayne State College in May 2018. 
+        During my career as a software engineer, I have worked diligently to maintain my status as an eternal student through instructor-led training, conferences, and self-directed learning. You'll find that my work experience has exposed me to diverse organizations both small and large. Looking back, I think my personable character and ability to enter every situation I come across with an open mind has brought me each and every opportunity thus far.
         </p>
       </div>
       <br />
@@ -120,6 +122,8 @@
             </b-row>
             <b-row align-h="start">
               <h6>Pierce, Nebraska</h6>
+              <p class="text-left">In 2013, I graduated from a small-town high school along with 50 others where I was a two-sport athlete competing in football and track. 
+                You just might find my hudl highlight reel floating around the web and if you look hard enough, maybe even a college football headshot.</p>
             </b-row>
           </b-card-text>
         </b-card>
@@ -140,26 +144,8 @@
             </b-row>
             <b-row align-h="start">
               <h6>Norfolk, Nebraska</h6>
-            </b-row>
-          </b-card-text>
-        </b-card>
-        <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-img-lazy fluid :src="require('@/assets/images/WSC.png')"/>
-          <b-card-text>
-            <b-row align-h="start">
-              <h4 class="text-primary">
-                <a
-                  class="nounderline"
-                  href="https://www.wsc.edu/"
-                  target="_blank"
-                >Wayne State College</a>
-              </h4>
-            </b-row>
-            <b-row align-h="start">
-              <h5 class="text-success">B.S. in Computer Science, May 2018</h5>
-            </b-row>
-            <b-row align-h="start">
-              <h6>Wayne, Nebraska</h6>
+              <p class="text-left">At NECC, I focused on taking care of general studies requirements that would go towards my bachelor's degree. 
+                I completed my A.A. with a 3.8 cumulative grade point average.</p>
             </b-row>
           </b-card-text>
         </b-card>
@@ -180,6 +166,33 @@
             </b-row>
             <b-row align-h="start">
               <h6>Lincoln, Nebraska</h6>
+              <p class="text-left">During the summer of 2017, I completed an internship at Bestorq, Inc. in Lincoln, Nebraska. Bestorq is a v-belt and timing belt distributor. Bestorq's main focus aside from selling belts is quality assurance. 
+                Because quality assurance is the main priority, I had the opportunity to do some embedded tasks like making small adjustments to tolerance thresholds on both belt cutting and belt measuring machines. 
+                During my summer, I completed web development tasks on both their internal web application as well as an e-commerce website. 
+                My main task for the summer was to create a <a target="_blank" href="https://www.bestorq.com/LGLookup.asp">lookup page</a> so customers could match their lawn and garden machine to a Bestorq belt part number. 
+                Some of the main technologies used were SQL Server, ASP.NET, C#, and jQuery.</p>
+            </b-row>
+          </b-card-text>
+        </b-card>
+        <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
+          <b-img-lazy fluid :src="require('@/assets/images/WSC.png')"/>
+          <b-card-text>
+            <b-row align-h="start">
+              <h4 class="text-primary">
+                <a
+                  class="nounderline"
+                  href="https://www.wsc.edu/"
+                  target="_blank"
+                >Wayne State College</a>
+              </h4>
+            </b-row>
+            <b-row align-h="start">
+              <h5 class="text-success">B.S. in Computer Science, May 2018</h5>
+            </b-row>
+            <b-row align-h="start">
+              <h6>Wayne, Nebraska</h6>
+              <p class="text-left">I was holding a 4.0 GPA up until my senior spring semester where I was in class until noon, working part-time at Daycos, and also bartending at night. 
+                I completed my B.S. at WSC with my cumulative GPA resting at 3.4.</p>
             </b-row>
           </b-card-text>
         </b-card>
@@ -200,6 +213,13 @@
             </b-row>
             <b-row align-h="start">
               <h6>Norfolk, Nebraska</h6>
+              <p class="text-left">Daycos falls into the transportation industry by offering revenue solutions to transportation companies. 
+                During my time at the organization, we were on the search for additional revenue sources. 
+                I was able to help develop a commercial freight product that would allow us to ensure accurate billing, exception management, and also post-audit services for carriers.</p>
+              <p class="text-left">On the more technical side, developing this product involved writing a C# web API that included 21 endpoints to process new incoming shipments and provide CRUD operations for the web application. 
+                The web application allowed Daycos employees to complete audits, billing, and give customers visibility as well.
+                The web application utilized node.js, BootStrap, Svelte.js, PostgreSQL backend, and GraphQL on the frontend. 
+                As part of this product, the API hit a very cool process that involved some computer vision and machine learning to extract data such as scale data from weight tickets.</p>
             </b-row>
           </b-card-text>
         </b-card>
@@ -220,6 +240,18 @@
             </b-row>
             <b-row align-h="start">
               <h6>Omaha, Nebraska</h6>
+              <p class="text-left">Currently, I am working at the University of Nebraska Medical Center where I am a fully remote employee. 
+                Since UNMC is part of the University of Nebraska and also working very closely with Nebraska Medicine, I get to experience and work with tons of different people and projects. 
+                One day it could be making updates to an API that feeds the Nebraska Medicine Digital Front Door mobile app, working on a UNMC graduate studies internal application, or meeting with engineers from UNO, UNMC, UNL, and UNK campuses on a University-wide project. 
+                With 200 unique internal applications, I have the opportunity to work on many different things. </p>
+                <p class="text-left">Now for the buzz words and technical stuff. 
+                  I mostly work with PHP, jQuery, and Sybase for the majority of our internal applications. 
+                  But as part of a modernization initiative, I am also working with PHP in the Laravel framework with vue.js on the frontend and SQL Server 2019. 
+                  I also completed MuleSoft instructor-led training and occasionally work on API integrations such as Epic MyChart and SailPoint. 
+                  One of my larger accomplishments so far at UNMC was the work I completed on the COVID-19 <a target="_blank" href="https://tracker.nebraskamed.com/">Symptom Tracker</a> application. 
+                  The project was developed in Laravel, BootStrap, Vue.js, PHP, and MySQL. 
+                  My contribution to the project was building out an email notification symptom to remind users to track every day if they forget to track once they've started the process. 
+                  A few months after project completion, this project and Nebraska Medicine's Digital Front Door were <a target="_blank" href="https://www.wsj.com/articles/rethinking-the-hospital-for-the-next-pandemic-11591652504?reflink=desktopwebshare_permalink">recognized by the Wall Street Journal</a>.</p>
             </b-row>
           </b-card-text>
         </b-card>
@@ -299,6 +331,9 @@ body {
   font-size: 1em;
   font-family: "Roboto Slab";
   overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 </style>
 <script>
