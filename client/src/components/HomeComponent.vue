@@ -104,7 +104,7 @@
           class="mb-4"
           style="max-width: 50rem; max-height: 50rem;"
         >
-        <b-img-lazy :src="require('@/assets/images/PHS.png')"/>
+        <b-img-lazy fluid :src="require('@/assets/images/PHS.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4>
@@ -124,7 +124,7 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-img-lazy :src="require('@/assets/images/NECC.png')"/>
+          <b-img-lazy fluid :src="require('@/assets/images/NECC.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4 class="text-primary">
@@ -144,7 +144,7 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-img-lazy :src="require('@/assets/images/WSC.png')"/>
+          <b-img-lazy fluid :src="require('@/assets/images/WSC.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4 class="text-primary">
@@ -164,7 +164,7 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-img-lazy :src="require('@/assets/images/Bestorq.png')"/>
+          <b-img-lazy fluid :src="require('@/assets/images/Bestorq.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4>
@@ -184,7 +184,7 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-img-lazy :src="require('@/assets/images/Daycos.png')"/>
+          <b-img-lazy fluid :src="require('@/assets/images/Daycos.png')"/>
           <b-card-text>
             <b-row align-h="start">
               <h4>
@@ -204,16 +204,16 @@
           </b-card-text>
         </b-card>
         <b-card bg-variant="dark" border-variant="secondary" class="mb-4" style="max-width: 50rem;">
-          <b-img-lazy :src="require('@/assets/images/UNMC.png')"/>
+          <b-img-lazy fluid :src="require('@/assets/images/UNMC.png')"/>
           <b-card-text>
             <b-row align-h="start">
-              <h4>
+              <h5>
                 <a
                   class="nounderline text-primary"
                   href="https://www.unmc.edu/"
                   target="_blank"
                 >University of Nebraska Medical Center</a>
-              </h4>
+              </h5>
             </b-row>
             <b-row align-h="start">
               <h5 class="text-success">August 2019 - Present</h5>
