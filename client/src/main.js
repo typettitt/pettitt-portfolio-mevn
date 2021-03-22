@@ -18,7 +18,7 @@ Vue.use(VueAxios, axios);
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
 Vue.use(VueAnalytics, {
-  id: 'G-TGGN59V8NB'
+  id: 'G-P0NW1L7XVW'
 })
 Vue.prototype.moment = moment
 
