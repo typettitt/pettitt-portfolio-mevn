@@ -53,7 +53,7 @@
             class="nounderline link"
             href="https://www.linkedin.com/pulse/contagious-positivity-secret-weapon-successful-emil-hauch-jensen/"
             target="_blank"
-            @click="track('Core Value Click', 'Interaction', 'Hyperlink click', true);"
+            @click="track('Core Value 1 Click', 'Interaction', 'Hyperlink click', true);"
           >POSITIVITY IS CONTAGIOUS</a>
         </b-row>
         <b-row class="mt-4 mb-4" align-h="center">
@@ -61,7 +61,7 @@
             class="nounderline link"
             href="http://paulgraham.com/ecw.html"
             target="_blank"
-            @click="track('Core Value Click', 'Interaction', 'Hyperlink click', true);"
+            @click="track('Core Value 2 Click', 'Interaction', 'Hyperlink click', true);"
           >EMBRACE CHANGE</a>
         </b-row>
         <b-row class="mt-4 mb-4" align-h="center">
@@ -69,7 +69,7 @@
             class="nounderline link"
             href="https://www.quora.com/Is-getting-rich-worth-it-9"
             target="_blank"
-            @click="track('Core Value Click', 'Interaction', 'Hyperlink click', true);"
+            @click="track('Core Value 3 Click', 'Interaction', 'Hyperlink click', true);"
           >PURSUE PASSIONS, NOT PAYCHECKS</a>
         </b-row>
         <b-row class="mt-4 mb-4" align-h="center">
@@ -77,7 +77,7 @@
             class="nounderline link"
             href="https://medium.com/@mahnoor.asghar109/never-stop-learning-because-life-never-stops-teaching-ed289f27fde4"
             target="_blank"
-            @click="track('Core Value Click', 'Interaction', 'Hyperlink click', true);"
+            @click="track('Core Value 4 Click', 'Interaction', 'Hyperlink click', true);"
           >LEARN EVERY DAY</a>
         </b-row>
         <b-row class="mt-4 mb-4" align-h="center">
@@ -85,7 +85,7 @@
             class="nounderline link"
             href="https://www.positivityblog.com/how-to-overcome-failure/"
             target="_blank"
-            @click="track('Core Value Click', 'Interaction', 'Hyperlink click', true);"
+            @click="track('Core Value 5 Click', 'Interaction', 'Hyperlink click', true);"
           >DO NOT BE AFRAID OF FAILURE</a>
         </b-row>
       </div>
@@ -113,7 +113,7 @@
                   class="nounderline text-primary"
                   href="https://www.piercepublic.org/"
                   target="_blank"
-                  @click="track('Journey Header Click', 'Interaction', 'Hyperlink click', true);"
+                  @click="track('PHS Header Click', 'Interaction', 'Hyperlink click', true);"
                 >Pierce Jr. Sr. High</a>
               </h4>
             </b-row>
@@ -135,7 +135,7 @@
                   class="nounderline"
                   href="https://northeast.edu/"
                   target="_blank"
-                  @click="track('Journey Header Click', 'Interaction', 'Hyperlink click', true);"
+                  @click="track('NECC Header Click', 'Interaction', 'Hyperlink click', true);"
                 >Northeast Community College</a>
               </h4>
             </b-row>
@@ -158,7 +158,7 @@
                   class="nounderline text-primary"
                   href="https://www.bestorq.com/"
                   target="_blank"
-                  @click="track('Journey Header Click', 'Interaction', 'Hyperlink click', true);"
+                  @click="track('Bestorq Header Click', 'Interaction', 'Hyperlink click', true);"
                 >Bestorq, Inc. (Internship)</a>
               </h4>
             </b-row>

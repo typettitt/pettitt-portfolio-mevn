@@ -16,7 +16,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect("mongodb+srv://" + process.env.DB_USER + ":" + process.env.DB_PASS + process.env.DB_MONGO_ADDRESS + process.env.DB_NAME + "?retryWrites=true&w=majority",
  { useNewUrlParser: true, useUnifiedTopology: true }).then(
     () => {
-        console.log('Database connected: '+ process.env.DB_NAME);
+        console.log('✔️   Database connected: '+ process.env.DB_NAME);
     },
     err => { console.log('Cannot connect to the database: ' + err) }
 );
@@ -39,5 +39,5 @@ if(process.env.NODE_ENV == 'production'){
     app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'));
 }
 app.listen(process.env.PORT, function () {
-    console.log('Server is running on Port:', process.env.PORT);
+    console.log('🚀  Server is running on Port:', process.env.PORT);
 });
