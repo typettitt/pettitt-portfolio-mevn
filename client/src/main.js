@@ -17,11 +17,7 @@ Vue.use(VueRouter);
 Vue.use(VueAxios, axios);
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
-Vue.use(VueGtag, {
-  config: { id: "UA-192744249-1",
-  send_page_view:  process.env.NODE_ENV === 'production'
-}
-});
+
 Vue.prototype.moment = moment
 
 Vue.config.productionTip = false;
@@ -42,6 +38,11 @@ const routes = [
   }
 ];
 const router = new VueRouter({ mode: 'history', routes: routes });
+
+Vue.use(VueGtag, {
+  config: { id: "UA-192744249-1"}
+}, router);
+
 const DEFAULT_TITLE = 'Tyler Pettitt';
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title || DEFAULT_TITLE
