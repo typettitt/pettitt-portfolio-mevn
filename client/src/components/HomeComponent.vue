@@ -1,18 +1,10 @@
 <template>
   <b-container class="px-0" style=" -ms-overflow-style: none; scrollbar-width: none;" fluid>
     <div class="parallax" style="height: 100vh">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <div class="text-white text-center">
         <b-row align-h="center">
           <h1 class="text-white text-uppercase font-weight-bold mb-2">
-            <img class="circular--square" width="50%" src="../assets/images/square-headshot.jpg" />
+            <img class="circular--square" style="margin-top: 25vh;" width="50%" src="../assets/images/square-headshot.jpg" />
           </h1>
         </b-row>
         <b-row align-h="center">
@@ -257,7 +249,6 @@
           </b-card-text>
         </b-card>
     </div>
-    <br />
     <!--  *******************************Networking*******************************
           *********************************************************************
     *********************************************************************-->
@@ -267,20 +258,20 @@
     </b-row>
     <b-row align-h="center" class="mb-4">
       <a href="https://github.com/typettitt" target="_blank">
-      <b-button v-b-tooltip.hover title="Visit my GitHub profile" variant="outline-primary" class="mb-2 mt-2 ml-3">
+      <b-button v-b-tooltip.hover title="Visit GitHub Profile" variant="outline-primary" class="mb-2 mt-2 ml-3">
         <b-icon icon="github" aria-hidden="true"></b-icon> GitHub
       </b-button>
       </a>
 
       <a href="https://www.linkedin.com/in/tyler-pettitt/" target="_blank">
-      <b-button v-b-tooltip.hover title="Visit my LinkedIn profile" variant="outline-primary" class="mb-2 mt-2 ml-3">
+      <b-button v-b-tooltip.hover title="Visit LinkedIn Profile" variant="outline-primary" class="mb-2 mt-2 ml-3">
         <b-icon icon="linkedin" aria-hidden="true"></b-icon> LinkedIn
       </b-button>
       </a>
-      <b-button v-b-tooltip.hover title="Send me a message" variant="outline-primary" class="mb-2 mt-2 ml-3" @click="openCreateModal()">
+      <b-button v-b-tooltip.hover title="Contact Me" variant="outline-primary" class="mb-2 mt-2 ml-3" @click="openCreateModal()">
         <b-icon icon="envelope" aria-hidden="true"></b-icon> Contact
       </b-button>
-      <a href="https://docs.google.com/uc?export=download&confirm=no_antivirus&id=1JrsyyH1LePf6rchdqmj9lQ8IR_uaCatd" target="_blank"><b-button v-b-tooltip.hover title="Download my full resume" variant="outline-primary" class="mb-2 mt-2 ml-3"><b-icon icon="download" aria-hidden="true"></b-icon> Resume</b-button></a>
+      <a href="https://docs.google.com/uc?export=download&confirm=no_antivirus&id=1JrsyyH1LePf6rchdqmj9lQ8IR_uaCatd"><b-button v-b-tooltip.hover title="Download Resume" variant="outline-primary" class="mb-2 mt-2 ml-3"><b-icon icon="download" aria-hidden="true"></b-icon> Resume</b-button></a>
     </b-row>
     <div
       class="text-white px-4"
@@ -365,11 +356,19 @@ export default {
   },
   computed: {},
   methods: {
+    track (event, category, label, value) {
+      this.$gtag.event(event, {
+        'event_category': category,
+        'event_label': label,
+        'value': value
+      })
+    },
     charCount() {
       this.totalCharacter = this.contact.message.length;
     },
     openCreateModal() {
       this.$bvModal.show("modal-contact");
+      this.track('Contact Modal Opened', 'Interaction', 'Contact Modal', true);
     },
     cancelCreateModal() {
       this.$bvModal.hide("modal-contact");

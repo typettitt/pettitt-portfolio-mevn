@@ -38,10 +38,11 @@ const routes = [
   }
 ];
 const router = new VueRouter({ mode: 'history', routes: routes });
-
-Vue.use(VueGtag, {
-  config: { id: "UA-192744249-1"}
-}, router);
+if(process.env.NODE_ENV == 'production'){
+  Vue.use(VueGtag, {
+    config: { id: "UA-192744249-1"}
+  }, router);
+}
 
 const DEFAULT_TITLE = 'Tyler Pettitt';
 router.beforeEach((to, from, next) => {
