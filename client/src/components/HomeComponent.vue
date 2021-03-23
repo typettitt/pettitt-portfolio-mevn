@@ -53,6 +53,7 @@
             class="nounderline link"
             href="https://www.linkedin.com/pulse/contagious-positivity-secret-weapon-successful-emil-hauch-jensen/"
             target="_blank"
+            @click="track('Core Value Click', 'Interaction', 'Hyperlink click', true);"
           >POSITIVITY IS CONTAGIOUS</a>
         </b-row>
         <b-row class="mt-4 mb-4" align-h="center">
@@ -60,6 +61,7 @@
             class="nounderline link"
             href="http://paulgraham.com/ecw.html"
             target="_blank"
+            @click="track('Core Value Click', 'Interaction', 'Hyperlink click', true);"
           >EMBRACE CHANGE</a>
         </b-row>
         <b-row class="mt-4 mb-4" align-h="center">
@@ -67,6 +69,7 @@
             class="nounderline link"
             href="https://www.quora.com/Is-getting-rich-worth-it-9"
             target="_blank"
+            @click="track('Core Value Click', 'Interaction', 'Hyperlink click', true);"
           >PURSUE PASSIONS, NOT PAYCHECKS</a>
         </b-row>
         <b-row class="mt-4 mb-4" align-h="center">
@@ -74,6 +77,7 @@
             class="nounderline link"
             href="https://medium.com/@mahnoor.asghar109/never-stop-learning-because-life-never-stops-teaching-ed289f27fde4"
             target="_blank"
+            @click="track('Core Value Click', 'Interaction', 'Hyperlink click', true);"
           >LEARN EVERY DAY</a>
         </b-row>
         <b-row class="mt-4 mb-4" align-h="center">
@@ -81,6 +85,7 @@
             class="nounderline link"
             href="https://www.positivityblog.com/how-to-overcome-failure/"
             target="_blank"
+            @click="track('Core Value Click', 'Interaction', 'Hyperlink click', true);"
           >DO NOT BE AFRAID OF FAILURE</a>
         </b-row>
       </div>
@@ -108,6 +113,7 @@
                   class="nounderline text-primary"
                   href="https://www.piercepublic.org/"
                   target="_blank"
+                  @click="track('Journey Header Click', 'Interaction', 'Hyperlink click', true);"
                 >Pierce Jr. Sr. High</a>
               </h4>
             </b-row>
@@ -129,6 +135,7 @@
                   class="nounderline"
                   href="https://northeast.edu/"
                   target="_blank"
+                  @click="track('Journey Header Click', 'Interaction', 'Hyperlink click', true);"
                 >Northeast Community College</a>
               </h4>
             </b-row>
@@ -151,6 +158,7 @@
                   class="nounderline text-primary"
                   href="https://www.bestorq.com/"
                   target="_blank"
+                  @click="track('Journey Header Click', 'Interaction', 'Hyperlink click', true);"
                 >Bestorq, Inc. (Internship)</a>
               </h4>
             </b-row>
@@ -162,7 +170,7 @@
               <p class="text-left">During the summer of 2017, I completed an internship at Bestorq, Inc. in Lincoln, Nebraska. Bestorq is a v-belt and timing belt distributor. Bestorq's main focus aside from distribution is quality assurance. 
                 Because quality assurance is the main priority, I had the opportunity to do some embedded development like making small adjustments to tolerance thresholds on both belt cutting and belt measuring machines internal software. 
                 During my summer, I completed web development tasks on both their internal web application as well as an e-commerce website. 
-                My main task for the summer was to create a <a target="_blank" href="https://www.bestorq.com/LGLookup.asp">lookup page</a> so customers could match their lawn and garden machine to a Bestorq belt part number. 
+                My main task for the summer was to create a <a @click="track('Bestorq Lookup Page Click', 'Interaction', 'Hyperlink click', true);" target="_blank" href="https://www.bestorq.com/LGLookup.asp">lookup page</a> so customers could match their lawn and garden machine to a Bestorq belt part number. 
                 Some of the main technologies used were SQL Server, ASP.NET, C#, and jQuery.</p>
             </b-row>
           </b-card-text>
@@ -176,6 +184,7 @@
                   class="nounderline"
                   href="https://www.wsc.edu/"
                   target="_blank"
+                  @click="track('PHS Header Click', 'Interaction', 'Hyperlink click', true);"
                 >Wayne State College</a>
               </h4>
             </b-row>
@@ -198,6 +207,7 @@
                   class="nounderline text-primary"
                   href="https://daycos.com/"
                   target="_blank"
+                  @click="track('Daycos Header Click', 'Interaction', 'Hyperlink click', true);"
                 >Daycos</a>
               </h4>
             </b-row>
@@ -225,6 +235,7 @@
                   class="nounderline text-primary"
                   href="https://www.unmc.edu/"
                   target="_blank"
+                  @click="track('UNMC Header Click', 'Interaction', 'Hyperlink click', true);"
                 >University of Nebraska Medical Center</a>
               </h4>
             </b-row>
@@ -241,10 +252,10 @@
                   The majority of applications I support are using PHP, jQuery, and Sybase. 
                   But as part of a modernization initiative, I am also working with PHP in the Laravel framework with vue.js on the frontend and SQL Server 2019. 
                   I also completed MuleSoft instructor-led training and occasionally work on API integrations such as Epic MyChart and SailPoint. 
-                  One of my larger accomplishments so far at UNMC was the work I completed on the COVID-19 <a target="_blank" href="https://tracker.nebraskamed.com/">Symptom Tracker</a> application. 
+                  One of my larger accomplishments so far at UNMC was the work I completed on the COVID-19 <a @click="track('Sympotom Tracker Click', 'Interaction', 'Hyperlink click', true);" target="_blank" href="https://tracker.nebraskamed.com/">Symptom Tracker</a> application. 
                   The project was developed in Laravel, BootStrap, Vue.js, PHP, and MySQL. 
                   My contribution to the project was building out an email notification system to remind users to track every day if they forget to track once they've started the process. 
-                  A few months after project completion, this project and along with Nebraska Medicine's Digital Front Door were <a target="_blank" href="https://www.wsj.com/articles/rethinking-the-hospital-for-the-next-pandemic-11591652504?reflink=desktopwebshare_permalink">recognized by the Wall Street Journal</a>.</p>
+                  A few months after project completion, this project and along with Nebraska Medicine's Digital Front Door were <a @click="track('WSJ Click', 'Interaction', 'Hyperlink click', true);" target="_blank" href="https://www.wsj.com/articles/rethinking-the-hospital-for-the-next-pandemic-11591652504?reflink=desktopwebshare_permalink">recognized by the Wall Street Journal</a>.</p>
             </b-row>
           </b-card-text>
         </b-card>
@@ -257,13 +268,13 @@
       <h1 class="font-weight-bold text-white mt-4 mb-4">Stay In Touch</h1>
     </b-row>
     <b-row align-h="center" class="mb-4">
-      <a href="https://github.com/typettitt" target="_blank">
+      <a @click="track('GitHub Click', 'Interaction', 'Button click', true);" href="https://github.com/typettitt" target="_blank">
       <b-button v-b-tooltip.hover title="Visit GitHub Profile" variant="outline-primary" class="mb-2 mt-2 ml-3">
         <b-icon icon="github" aria-hidden="true"></b-icon> GitHub
       </b-button>
       </a>
 
-      <a href="https://www.linkedin.com/in/tyler-pettitt/" target="_blank">
+      <a @click="track('LinkedIn Click', 'Interaction', 'Button click', true);" href="https://www.linkedin.com/in/tyler-pettitt/" target="_blank">
       <b-button v-b-tooltip.hover title="Visit LinkedIn Profile" variant="outline-primary" class="mb-2 mt-2 ml-3">
         <b-icon icon="linkedin" aria-hidden="true"></b-icon> LinkedIn
       </b-button>
@@ -271,7 +282,7 @@
       <b-button v-b-tooltip.hover title="Contact Me" variant="outline-primary" class="mb-2 mt-2 ml-3" @click="openCreateModal()">
         <b-icon icon="envelope" aria-hidden="true"></b-icon> Contact
       </b-button>
-      <a href="https://docs.google.com/uc?export=download&confirm=no_antivirus&id=1JrsyyH1LePf6rchdqmj9lQ8IR_uaCatd"><b-button v-b-tooltip.hover title="Download Resume" variant="outline-primary" class="mb-2 mt-2 ml-3"><b-icon icon="download" aria-hidden="true"></b-icon> Resume</b-button></a>
+      <a @click="track('Resume Downloaded', 'Interaction', 'Download', true);" href="https://docs.google.com/uc?export=download&confirm=no_antivirus&id=1JrsyyH1LePf6rchdqmj9lQ8IR_uaCatd"><b-button v-b-tooltip.hover title="Download Resume" variant="outline-primary" class="mb-2 mt-2 ml-3"><b-icon icon="download" aria-hidden="true"></b-icon> Resume</b-button></a>
     </b-row>
     <div
       class="text-white px-4"
@@ -356,10 +367,10 @@ export default {
   },
   computed: {},
   methods: {
-    track (event, category, label, value) {
+    track (event, category, action, value) {
       this.$gtag.event(event, {
         'event_category': category,
-        'event_label': label,
+        'event_label': action,
         'value': value
       })
     },
@@ -383,6 +394,7 @@ export default {
     },
     submitCreateModalForm() {
       let uri = "api/contact";
+      this.track('Contact Sent', 'Interaction', 'Message Sent', true);
       this.axios.post(uri, this.contact).then(() => {
           this.cancelCreateModal();
       });
