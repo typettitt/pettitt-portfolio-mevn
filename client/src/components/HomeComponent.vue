@@ -124,8 +124,7 @@
             </b-row>
             <b-row align-h="start">
               <h6>Pierce, Nebraska</h6>
-              <p class="text-left">In 2013, I graduated from a small-town high school where I was a two-sport athlete competing in football and track. 
-                You just might find my hudl highlight reel floating around the web and if you look hard enough, maybe even a college football headshot.</p>
+              <p class="text-left">In 2013, I graduated from a small-town high school where I was a two-sport athlete competing in football and track.</p>
             </b-row>
           </b-card-text>
         </b-card>
