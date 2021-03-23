@@ -266,46 +266,26 @@
     </b-row>
     <b-row align-h="center" class="mb-4">
       <a href="https://github.com/typettitt" target="_blank">
-        <img
-          src="../assets/icons/039-github.png"
-          alt="github"
-          width="50px"
-          height="50px"
-          class="mr-4"
-        />
+      <b-button v-b-tooltip.hover title="Visit my GitHub profile" variant="outline-primary" class="mb-2 mt-2 ml-3">
+        <b-icon icon="github" aria-hidden="true"></b-icon> GitHub
+      </b-button>
       </a>
+
       <a href="https://www.linkedin.com/in/tyler-pettitt/" target="_blank">
-        <img
-          src="../assets/icons/031-linkedin.png"
-          alt="linkedin"
-          width="50px"
-          height="50px"
-        />
+      <b-button v-b-tooltip.hover title="Visit my LinkedIn profile" variant="outline-primary" class="mb-2 mt-2 ml-3">
+        <b-icon icon="linkedin" aria-hidden="true"></b-icon> LinkedIn
+      </b-button>
       </a>
-      <b-button variant="outline-primary" class="mb-2 mt-2 ml-3" @click="openCreateModal()">
+      <b-button v-b-tooltip.hover title="Send me a message" variant="outline-primary" class="mb-2 mt-2 ml-3" @click="openCreateModal()">
         <b-icon icon="envelope" aria-hidden="true"></b-icon> Contact
       </b-button>
+      <a href="https://docs.google.com/uc?export=download&confirm=no_antivirus&id=1JrsyyH1LePf6rchdqmj9lQ8IR_uaCatd" target="_blank"><b-button v-b-tooltip.hover title="Download my full resume" variant="outline-primary" class="mb-2 mt-2 ml-3"><b-icon icon="download" aria-hidden="true"></b-icon> Resume</b-button></a>
     </b-row>
     <div
       class="text-white px-4"
       align="center"
       style="font-size: 10px;"
     >This projcet was built using the MEVN(MongoDB, Express, Vue, Node) stack. The entire project can be found on my github linked above.</div>
-    <b-row align-h="center">
-      <div class="text-white mt-2" style="font-size: 10px;">
-        Icons made by
-        <a
-          class="nounderline"
-          href="https://www.flaticon.com/authors/pixel-perfect"
-          title="Pixel perfect"
-        >Pixel perfect</a> from
-        <a
-          class="nounderline"
-          href="https://www.flaticon.com/"
-          title="Flaticon"
-        >www.flaticon.com</a>
-      </div>
-    </b-row>
     </div>
      <!-- **************************************************** -->
     <!--*******************CONTACT FORM MODAL*******************-->
@@ -318,7 +298,7 @@
       button-size="sm"
       hide-footer
     >
-      <b-form @submit="submitCreateModalForm" @reset="resetCreateModalForm" autocomplete="off">
+      <b-form @reset="resetCreateModalForm" autocomplete="off">
         <b-row>
           <b-col>
             <b-form-group id="input-group-1" label="Your Name" label-for="input-1">
@@ -348,9 +328,9 @@
                 v-model="contact.message"
                 placeholder="Enter your message here..."
                 required
-                rows="3"
+                rows="4"
                 :maxlength="maxcommentLength"
-                max-rows="6"
+                max-rows="8"
                 autocomplete="off"
                 @keyup="charCount()"
               ></b-form-textarea>
@@ -360,7 +340,7 @@
         {{ totalCharacter }} / 150
         <b-row align-h="end">
           <b-button type="reset" variant="secondary" class="mx-2">Reset</b-button>
-          <b-button type="submit" variant="primary" class="mx-2">Submit</b-button>
+          <b-button @click="submitCreateModalForm" type="button" variant="primary" class="mx-2">Submit</b-button>
         </b-row>
       </b-form>
     </b-modal>
@@ -378,11 +358,8 @@ export default {
       showCreateModal: false,
       showEditModal: false,
       showVerifyModal: false,
-      console: "",
       totalCharacter: 0,
       maxcommentLength: 150,
-      verifyPin: "", 
-      verifySubmit: "",
     };
   },
   computed: {},
@@ -406,8 +383,9 @@ export default {
     },
     submitCreateModalForm() {
       let uri = "api/contact";
-      this.axios.post(uri, this.contact);
-      //return false;
+      this.axios.post(uri, this.contact).then(() => {
+          this.cancelCreateModal();
+      });
     },
   },
 };
