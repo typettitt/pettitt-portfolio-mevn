@@ -40,8 +40,10 @@
         Hello, I'm Tyler Pettitt. I'm a full-stack software engineer with {{moment([2018, 2, 1]).fromNow(true)}} of experience.
         </p>
         <p>
-        After testing the waters in different majors like mechanical engineering, programming, and even the realm of healthcare, I settled on computer science. I graduated from Northeast Community College in 2016 with an Associate of Arts degree where I mostly focused on general studies and a few information technology courses. From there, I earned my Bachelor's degree in Computer Science at Wayne State College in May 2018. 
-        During my career as a software engineer, I have worked diligently to maintain my status as an eternal student through instructor-led training, conferences, and self-directed learning. You'll find that my work experience has exposed me to diverse organizations both small and large. Looking back, I think my personable character and ability to enter every situation I come across with an open mind has brought me each and every opportunity thus far.
+        After testing the waters in different majors like mechanical engineering, programming, and even the realm of healthcare, I finally set my sights on computer science. 
+        During my career as a software engineer, I have worked diligently to maintain my status as an eternal student through instructor-led training, conferences, and self-directed learning. 
+        You'll find that my work experience has exposed me to diverse organizations both large and small. I also have experience working with multiple different tech stacks.
+        Looking back, I think my personable character and ability to approach every situation with an open mind has brought me each and every opportunity thus far.
         </p>
       </div>
       <br />
@@ -122,7 +124,7 @@
             </b-row>
             <b-row align-h="start">
               <h6>Pierce, Nebraska</h6>
-              <p class="text-left">In 2013, I graduated from a small-town high school along with 50 others where I was a two-sport athlete competing in football and track. 
+              <p class="text-left">In 2013, I graduated from a small-town high school where I was a two-sport athlete competing in football and track. 
                 You just might find my hudl highlight reel floating around the web and if you look hard enough, maybe even a college football headshot.</p>
             </b-row>
           </b-card-text>
@@ -145,7 +147,7 @@
             <b-row align-h="start">
               <h6>Norfolk, Nebraska</h6>
               <p class="text-left">At NECC, I focused on taking care of general studies requirements that would go towards my bachelor's degree. 
-                I completed my A.A. with a 3.8 cumulative grade point average.</p>
+                I completed my A.A. with a 3.8 GPA.</p>
             </b-row>
           </b-card-text>
         </b-card>
@@ -166,8 +168,8 @@
             </b-row>
             <b-row align-h="start">
               <h6>Lincoln, Nebraska</h6>
-              <p class="text-left">During the summer of 2017, I completed an internship at Bestorq, Inc. in Lincoln, Nebraska. Bestorq is a v-belt and timing belt distributor. Bestorq's main focus aside from selling belts is quality assurance. 
-                Because quality assurance is the main priority, I had the opportunity to do some embedded tasks like making small adjustments to tolerance thresholds on both belt cutting and belt measuring machines. 
+              <p class="text-left">During the summer of 2017, I completed an internship at Bestorq, Inc. in Lincoln, Nebraska. Bestorq is a v-belt and timing belt distributor. Bestorq's main focus aside from distribution is quality assurance. 
+                Because quality assurance is the main priority, I had the opportunity to do some embedded development like making small adjustments to tolerance thresholds on both belt cutting and belt measuring machines internal software. 
                 During my summer, I completed web development tasks on both their internal web application as well as an e-commerce website. 
                 My main task for the summer was to create a <a target="_blank" href="https://www.bestorq.com/LGLookup.asp">lookup page</a> so customers could match their lawn and garden machine to a Bestorq belt part number. 
                 Some of the main technologies used were SQL Server, ASP.NET, C#, and jQuery.</p>
@@ -191,8 +193,8 @@
             </b-row>
             <b-row align-h="start">
               <h6>Wayne, Nebraska</h6>
-              <p class="text-left">I was holding a 4.0 GPA up until my senior spring semester where I was in class until noon, working part-time at Daycos, and also bartending at night. 
-                I completed my B.S. at WSC with my cumulative GPA resting at 3.4.</p>
+              <p class="text-left">I was holding a 4.0 GPA up until my senior spring semester where I was in class until noon, working part-time at Daycos after school, coaching high school track, and bartending at night. 
+                I completed my B.S. at WSC with a 3.4 cumulative GPA.</p>
             </b-row>
           </b-card-text>
         </b-card>
@@ -214,12 +216,12 @@
             <b-row align-h="start">
               <h6>Norfolk, Nebraska</h6>
               <p class="text-left">Daycos falls into the transportation industry by offering revenue solutions to transportation companies. 
-                During my time at the organization, we were on the search for additional revenue sources. 
+                During my time at the organization, we were on the hunt for additional revenue sources. 
                 I was able to help develop a commercial freight product that would allow us to ensure accurate billing, exception management, and also post-audit services for carriers.</p>
-              <p class="text-left">On the more technical side, developing this product involved writing a C# web API that included 21 endpoints to process new incoming shipments and provide CRUD operations for the web application. 
-                The web application allowed Daycos employees to complete audits, billing, and give customers visibility as well.
-                The web application utilized node.js, BootStrap, Svelte.js, PostgreSQL backend, and GraphQL on the frontend. 
-                As part of this product, the API hit a very cool process that involved some computer vision and machine learning to extract data such as scale data from weight tickets.</p>
+              <p class="text-left">On the more technical side, developing this product involved writing a C# web API that included 21 endpoints to process new incoming shipment invoices and provide CRUD operations for the web application. 
+                The web application allowed Daycos employees to complete audits, billing, and also a customer portal.
+                The web application utilized node.js, BootStrap, Svelte.js, PostgreSQL, and GraphQL. 
+                As part of this product, the API hit a very cool process that involved some computer vision and machine learning to extract data such as scale data from weight ticket images.</p>
             </b-row>
           </b-card-text>
         </b-card>
@@ -245,13 +247,13 @@
                 One day it could be making updates to an API that feeds the Nebraska Medicine Digital Front Door mobile app, working on a UNMC graduate studies internal application, or meeting with engineers from UNO, UNMC, UNL, and UNK campuses on a University-wide project. 
                 With 200 unique internal applications, I have the opportunity to work on many different things. </p>
                 <p class="text-left">Now for the buzz words and technical stuff. 
-                  I mostly work with PHP, jQuery, and Sybase for the majority of our internal applications. 
+                  The majority of applications I support are using PHP, jQuery, and Sybase. 
                   But as part of a modernization initiative, I am also working with PHP in the Laravel framework with vue.js on the frontend and SQL Server 2019. 
                   I also completed MuleSoft instructor-led training and occasionally work on API integrations such as Epic MyChart and SailPoint. 
                   One of my larger accomplishments so far at UNMC was the work I completed on the COVID-19 <a target="_blank" href="https://tracker.nebraskamed.com/">Symptom Tracker</a> application. 
                   The project was developed in Laravel, BootStrap, Vue.js, PHP, and MySQL. 
-                  My contribution to the project was building out an email notification symptom to remind users to track every day if they forget to track once they've started the process. 
-                  A few months after project completion, this project and Nebraska Medicine's Digital Front Door were <a target="_blank" href="https://www.wsj.com/articles/rethinking-the-hospital-for-the-next-pandemic-11591652504?reflink=desktopwebshare_permalink">recognized by the Wall Street Journal</a>.</p>
+                  My contribution to the project was building out an email notification system to remind users to track every day if they forget to track once they've started the process. 
+                  A few months after project completion, this project and along with Nebraska Medicine's Digital Front Door were <a target="_blank" href="https://www.wsj.com/articles/rethinking-the-hospital-for-the-next-pandemic-11591652504?reflink=desktopwebshare_permalink">recognized by the Wall Street Journal</a>.</p>
             </b-row>
           </b-card-text>
         </b-card>
@@ -285,7 +287,7 @@
       class="text-white px-4"
       align="center"
       style="font-size: 10px;"
-    >This projcet was built using the MEVN(MongoDB, Express, Vue, Node) stack. The entire project can be found on my github linked above.</div>
+    >This projcet was built using the MEVN(MongoDB, Express.js, Vue.js, Node.js) stack and hosted on heroku. The project repository can be found on my github linked above.</div>
     </div>
      <!-- **************************************************** -->
     <!--*******************CONTACT FORM MODAL*******************-->
