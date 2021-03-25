@@ -8,10 +8,12 @@ The project is hosted on heroku and can be found on my own domain [here](http://
 
 ----
 ## To-Do List: 
-  - [ ] Add backend testing with Mocha/Chai(Partially Done)
+  - [ ] On-Scroll event to add 'back to top' button
+  - [ ] Add backend testing with Mocha/Chai(In-Progress)
+  - [X] Add Google Analytics
   - [X] Add message me button for visitors to send and email to me
   - [X] Update 'My Journey' section with better design
-  - [X] API Authentication POC - Not active but just experimenting
+  - [X] API Authentication via JWT (not perfect but makes it harder to hit the API from outside the application)
   - [X] Finish Comments page to demonstrate CRUD operations with MongoDB
   - [X] Remove unused assets
 ----

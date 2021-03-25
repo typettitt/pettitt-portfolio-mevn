@@ -3,8 +3,12 @@
     <div class="text-white text-center px-5 mb-5">
       <h1>Leave A Comment</h1>
     </div>
-    <b-row align-h="center" class="mb-4">
-      <b-button variant="outline-primary" size="sm" class="mx-4" @click="openCreateModal()">
+    <b-row align-h="between" class="mb-4">
+      <b-button variant="outline-primary" size="sm" style="margin-left: 13vw;" @click="goHome()">
+        <b-icon icon="chevron-double-left" aria-hidden="true"></b-icon>
+        Back to Main Page
+      </b-button>
+      <b-button variant="outline-primary" size="sm" style="margin-right: 13vw;" @click="openCreateModal()">
         Add A Comment
         <b-icon icon="plus" aria-hidden="true"></b-icon>
       </b-button>
@@ -213,13 +217,19 @@ export default {
     this.getAllComments();
   },
   methods: {
+    goHome() {
+      this.$router.push('/');
+    },
     charCount() {
       this.totalCharacter = this.comment.description.length;
     },
     getAllComments() {
+      const config = {
+        headers: { Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MTY2MDU0ODh9.8aTfYpQbwe7fDORE07DJEIT-_ZwaElkiBqM0GJ2zypg` }
+      };
       let uri = "api/comment";
       this.axios
-        .get(uri)
+        .get(uri, config)
         .then((response) => {
           this.allComments = response.data;
         });
@@ -264,32 +274,44 @@ export default {
       this.comment.description = "";
     },
     submitCreateModalForm() {
+      const config = {
+        headers: { Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MTY2MDU0ODh9.8aTfYpQbwe7fDORE07DJEIT-_ZwaElkiBqM0GJ2zypg` }
+      };
       let uri = "api/comment";
-      this.axios.post(uri, this.comment).then(() => {
+      this.axios.post(uri, this.comment, config).then(() => {
         this.getAllComments();
       });
     },
     submitEditModalForm() {
+      const config = {
+        headers: { Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MTY2MDU0ODh9.8aTfYpQbwe7fDORE07DJEIT-_ZwaElkiBqM0GJ2zypg` }
+      };
       let uri = "api/comment/" + this.comment.id;
-      this.axios.post(uri, this.comment).then(() => {
+      this.axios.post(uri, this.comment, config).then(() => {
         this.getAllComments();
         this.cancelEditModal()
       });
     },
     deleteComment(id){
+      const config = {
+        headers: { Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MTY2MDU0ODh9.8aTfYpQbwe7fDORE07DJEIT-_ZwaElkiBqM0GJ2zypg` }
+      };
       let uri = "api/comment/"+ id;
       this.resetOneComment();
       this.axios
-        .delete(uri)
+        .delete(uri, config)
         .then(() => {
           this.getAllComments();
         });
     },
     getComment(id){
+      const config = {
+        headers: { Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MTY2MDU0ODh9.8aTfYpQbwe7fDORE07DJEIT-_ZwaElkiBqM0GJ2zypg` }
+      };
       let uri = "api/comment/"+ id;
       this.resetOneComment();
       this.axios
-        .get(uri)
+        .get(uri, config)
         .then((response) => {
           this.comment.id = response.data._id;
           this.comment.first_name = response.data.first_name;

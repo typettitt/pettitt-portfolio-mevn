@@ -393,9 +393,12 @@ export default {
       this.totalCharacter=0;
     },
     submitCreateModalForm() {
+      const config = {
+        headers: { Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MTY2MDU0ODh9.8aTfYpQbwe7fDORE07DJEIT-_ZwaElkiBqM0GJ2zypg` }
+      };
       let uri = "api/contact";
       this.track('Contact Sent', 'Interaction', 'Message Sent', true);
-      this.axios.post(uri, this.contact).then(() => {
+      this.axios.post(uri, this.contact, config).then(() => {
           this.cancelCreateModal();
       });
     },
