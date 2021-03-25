@@ -49,15 +49,5 @@ router.beforeEach((to, from, next) => {
   document.title = to.meta.title || DEFAULT_TITLE
   next()
 });
-// function getAuth(){
-//   let uri = "api/jwt";
-//   axios
-//     .get(uri)
-//     .then((response) => {
-//       return response.data;
-//     });
-// }
-//jwt
-//axios.defaults.headers.common['Authorization'] = getAuth();
 
 new Vue(Vue.util.extend({ router }, App)).$mount('#app');
