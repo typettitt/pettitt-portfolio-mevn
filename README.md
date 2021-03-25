@@ -8,6 +8,7 @@ The project is hosted on heroku and can be found on my own domain [here](http://
 
 ----
 ## To-Do List: 
+  - [ ] Move storage of text descriptions to DB for easier updating
   - [ ] On-Scroll event to add 'back to top' button
   - [ ] Add backend testing with Mocha/Chai(In-Progress)
   - [X] Add Google Analytics
