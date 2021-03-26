@@ -7,9 +7,7 @@
       <meta name="author" content="Tyler Pettitt">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta property="og:title" content="Tyler Pettitt's Professional Portfolio">
-      <meta property="og:url" content="http://tylerpettitt.me">
-      <!-- <meta property="og:image" content="https://drive.google.com/file/d/11M60MRADMq661koejOi2Yu9RvtcdERrK/view?usp=sharing"> -->
-      <meta property="og:image" content="https://drive.google.com/file/d/14JJscI1DE0Bsny0wwEIafnAM-X2gUe2V/view?usp=sharing">
+      <meta property="og:image" content="https://64.media.tumblr.com/1df8c35f14bfff60ee4ad7497381a80a/17f75b657e4b7999-28/s540x810/11abfd7834e93c0f58986698d1bda588aaa51b84.jpg">
       <meta property="og:description"
           content="A MEVN stack web application built from scratch."/>
     </head>
