@@ -1,5 +1,18 @@
 <template>
   <b-container class="px-0" style=" -ms-overflow-style: none; scrollbar-width: none;" fluid>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Tyler Pettitt's Professional Protfolio">
+      <meta name="keywords" content="Tyler Pettitt, Pettitt, Professional Portfolio">
+      <meta name="author" content="Tyler Pettitt">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta property="og:title" content="Tyler Pettitt's Professional Portfolio">
+      <meta property="og:url" content="http://tylerpettitt.me">
+      <!-- <meta property="og:image" content="https://drive.google.com/file/d/11M60MRADMq661koejOi2Yu9RvtcdERrK/view?usp=sharing"> -->
+      <meta property="og:image" content="https://drive.google.com/file/d/14JJscI1DE0Bsny0wwEIafnAM-X2gUe2V/view?usp=sharing">
+      <meta property="og:description"
+          content="A MEVN stack web application built from scratch."/>
+    </head>
     <div class="parallax" style="height: 100vh">
       <div class="text-white text-center">
         <b-row align-h="center">
