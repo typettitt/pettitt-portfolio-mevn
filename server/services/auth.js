@@ -1,6 +1,8 @@
 const jwt = require('jsonwebtoken');
 
 var checkAuth = function isAuthenticated(req, res, next) {
+    //this does nothing productive I know
+    req.headers.authorization = `Bearer ` + getToken();
     if (typeof req.headers.authorization != "undefined") {
         let token = req.headers.authorization.split(' ')[1];
         let privateKey = process.env.PRIVATE_KEY;
@@ -17,6 +19,13 @@ var checkAuth = function isAuthenticated(req, res, next) {
     }
 }
 
+var getToken = function getJWT(){
+    let privateKey = process.env.PRIVATE_KEY;
+    let token = jwt.sign({ "body": "stuff" }, privateKey, { algorithm: 'HS256'});
+    return token;
+}
+
 module.exports = {
-    check: checkAuth
+    check: checkAuth,
+    token: getToken
 }

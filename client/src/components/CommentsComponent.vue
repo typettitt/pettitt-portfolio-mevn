@@ -224,12 +224,9 @@ export default {
       this.totalCharacter = this.comment.description.length;
     },
     getAllComments() {
-      const config = {
-        headers: { Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MTY2MDU0ODh9.8aTfYpQbwe7fDORE07DJEIT-_ZwaElkiBqM0GJ2zypg` }
-      };
       let uri = "api/comment";
       this.axios
-        .get(uri, config)
+        .get(uri)
         .then((response) => {
           this.allComments = response.data;
         });
@@ -274,44 +271,32 @@ export default {
       this.comment.description = "";
     },
     submitCreateModalForm() {
-      const config = {
-        headers: { Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MTY2MDU0ODh9.8aTfYpQbwe7fDORE07DJEIT-_ZwaElkiBqM0GJ2zypg` }
-      };
       let uri = "api/comment";
-      this.axios.post(uri, this.comment, config).then(() => {
+      this.axios.post(uri, this.comment).then(() => {
         this.getAllComments();
       });
     },
     submitEditModalForm() {
-      const config = {
-        headers: { Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MTY2MDU0ODh9.8aTfYpQbwe7fDORE07DJEIT-_ZwaElkiBqM0GJ2zypg` }
-      };
       let uri = "api/comment/" + this.comment.id;
-      this.axios.post(uri, this.comment, config).then(() => {
+      this.axios.post(uri, this.comment).then(() => {
         this.getAllComments();
         this.cancelEditModal()
       });
     },
     deleteComment(id){
-      const config = {
-        headers: { Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MTY2MDU0ODh9.8aTfYpQbwe7fDORE07DJEIT-_ZwaElkiBqM0GJ2zypg` }
-      };
       let uri = "api/comment/"+ id;
       this.resetOneComment();
       this.axios
-        .delete(uri, config)
+        .delete(uri)
         .then(() => {
           this.getAllComments();
         });
     },
     getComment(id){
-      const config = {
-        headers: { Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijoic3R1ZmYiLCJpYXQiOjE2MTY2MDU0ODh9.8aTfYpQbwe7fDORE07DJEIT-_ZwaElkiBqM0GJ2zypg` }
-      };
       let uri = "api/comment/"+ id;
       this.resetOneComment();
       this.axios
-        .get(uri, config)
+        .get(uri)
         .then((response) => {
           this.comment.id = response.data._id;
           this.comment.first_name = response.data.first_name;
