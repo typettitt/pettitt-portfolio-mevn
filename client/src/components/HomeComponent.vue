@@ -405,10 +405,10 @@ export default {
     },
     submitCreateModalForm() {
       let uri = "api/contact";
-      this.track('Contact Sent', 'Interaction', 'Message Sent', true);
       this.axios.post(uri, this.contact).then(() => {
-          this.cancelCreateModal();
+        this.cancelCreateModal();
       });
+      this.track('Contact Sent', 'Interaction', 'Message Sent', true);
     },
   },
 };
