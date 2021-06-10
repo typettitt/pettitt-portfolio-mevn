@@ -21,10 +21,8 @@ mongoose.connect("mongodb+srv://" + process.env.DB_USER + ":" + process.env.DB_P
     err => { console.log('Cannot connect to the database: ' + err) }
 );
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
-//add routes
+//api routes
 app.use('/api/contact', contactRoute);
 app.use('/api/comment', commentRoute);
 app.use('/api/jwt', jwtRoute);
