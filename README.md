@@ -10,7 +10,7 @@ The project is hosted on heroku and can be found on my own domain [here](http://
 ## To-Do List: 
   - [ ] Move storage of text descriptions to DB for easier updating
   - [ ] On-Scroll event to add 'back to top' button
-  - [ ] Add backend testing with Mocha/Chai(In-Progress)
+  - [X] Add backend testing with Mocha/Chai(API partially done)
   - [X] Add Google Analytics
   - [X] Add message me button for visitors to send and email to me
   - [X] Update 'My Journey' section with better design
@@ -34,6 +34,12 @@ The project is hosted on heroku and can be found on my own domain [here](http://
 6. `git push`
 7. `heroku login`
 8. `git push heroku master`
+----
+## Tests
+### API Mocha Tests
+1. `cd server`
+3. `npm run dev`  
+2. `npm run tests`
 
 ## License and copyright
 

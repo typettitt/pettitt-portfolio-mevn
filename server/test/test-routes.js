@@ -32,8 +32,8 @@ describe('Test API Routes', function() {
     describe('Get A Single Comment By ID', function() {
         it('GET /comment/id', function(done) {
             this.slow(1000);
-            request('http://localhost:4000/api/comment/5f72a7b593f0060824868cb8' , function(error, response, body) {
-                expect(body).to.include('"_id":"5f72a7b593f0060824868cb8",');
+            request('http://localhost:4000/api/comment/605b6d6317d2223d00b6f502' , function(error, response, body) {
+                expect(body).to.include('"_id":"605b6d6317d2223d00b6f502",');
                 done();
             });
         });

@@ -4,7 +4,9 @@ const pulseRoute = express.Router();
 // get pulse
 pulseRoute.route('/').get((req, res) => {
 		const healthcheck = {
-			uptime: process.uptime(),
+			uptime: Math.floor(process.uptime())+'s',
+			memory: process.memoryUsage(),
+			cpu: process.cpuUsage(),
 			message: 'OK',
 			timestamp: Date.now()
 		};
